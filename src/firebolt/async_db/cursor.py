@@ -312,6 +312,14 @@ class BaseCursor:
             rows = query_data["data"]
             return (rowcount, descriptions, statistics, rows)
         except (KeyError, ValueError) as err:
+            with open("sdk_debug_output.txt", "w") as f:
+                f.write(response.text)
+            try:
+                import pickle
+                pickle.dump( response, open( "sdk_debug_output.pickle", "wb" ) )
+            except:
+                print("Can't pickle an object")
+                pass
             raise DataError(f"Invalid query data format: {str(err)}")
 
     def _append_row_set(
