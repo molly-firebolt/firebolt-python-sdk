@@ -1,0 +1,11 @@
+WARNING  firebolt.common.settings:settings.py:80  Passing connection credentials directly in Settings is deprecated.
+ Use Auth object instead.
+ Examples:
+  >>> from firebolt.client.auth import UsernamePassword
+  >>> ...
+  >>> settings = Settings(auth=UsernamePassword(username, password), ...)
+ or
+  >>> from firebolt.client.auth import Token
+  >>> ...
+  >>> settings = Settings(auth=Token(access_token), ...)
+INFO     tests.integration.conftest:conftest.py:27 STOPPED_ENGINE_URL: integration-testing-1682592092-stopped.firebolt.us-east-1.dev.firebolt.io
