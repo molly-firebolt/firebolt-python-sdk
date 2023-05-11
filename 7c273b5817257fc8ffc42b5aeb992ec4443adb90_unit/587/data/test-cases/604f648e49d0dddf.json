@@ -1,0 +1,92 @@
+{
+  "uid" : "604f648e49d0dddf",
+  "name" : "test_format_statement[statement0-params0-select * from table]",
+  "fullName" : "tests.unit.async_db.test_typing_format#test_format_statement",
+  "historyId" : "2029a4bd40dbb8324b7ef5afc0c6e6e5",
+  "time" : {
+    "start" : 1683774145523,
+    "stop" : 1683774145524,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1683774145520,
+      "stop" : 1683774145522,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1683774145525,
+      "stop" : 1683774145526,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.async_db"
+  }, {
+    "name" : "suite",
+    "value" : "test_typing_format"
+  }, {
+    "name" : "host",
+    "value" : "fv-az162-72"
+  }, {
+    "name" : "thread",
+    "value" : "2402-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.async_db.test_typing_format"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "params",
+    "value" : "()"
+  }, {
+    "name" : "result",
+    "value" : "'select * from table'"
+  }, {
+    "name" : "statement",
+    "value" : "<Statement 'select...' at 0x7F0CC8440BD0>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "604f648e49d0dddf.json",
+  "parameterValues" : [ "()", "'select * from table'", "<Statement 'select...' at 0x7F0CC8440BD0>" ]
+}
