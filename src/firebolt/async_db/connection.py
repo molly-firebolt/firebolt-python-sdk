@@ -30,6 +30,7 @@ from firebolt.utils.util import fix_url_schema
 DEFAULT_TIMEOUT_SECONDS: int = 60
 KEEPALIVE_FLAG: int = 1
 KEEPIDLE_RATE: int = 60  # seconds
+KEEPALIVE_RATE: int = 5  # seconds
 AUTH_CREDENTIALS_DEPRECATION_MESSAGE = """ Passing connection credentials
  directly to the `connect` function is deprecated.
  Pass the `Auth` object instead.
@@ -276,20 +277,35 @@ class OverriddenHttpBackend(AutoBackend):
         stream = await super().connect_tcp(
             host, port, timeout=timeout, local_address=local_address
         )
-        # Enable keepalive
+        # Enable keepalive, socket level, protocol-independent
         stream.get_extra_info("socket").setsockopt(
             socket.SOL_SOCKET, socket.SO_KEEPALIVE, KEEPALIVE_FLAG
         )
-        # MacOS does not have TCP_KEEPIDLE
         if hasattr(socket, "TCP_KEEPIDLE"):
             keepidle = socket.TCP_KEEPIDLE
         else:
             keepidle = 0x10  # TCP_KEEPALIVE on mac
 
-        # Set keepalive to 60 seconds
+        # TCP-specific keepalive options
+        # number of seconds a TCP connection will remain idle before keepalive
+        # probes are sent to the remote
         stream.get_extra_info("socket").setsockopt(
             socket.IPPROTO_TCP, keepidle, KEEPIDLE_RATE
         )
+        # number of seconds a TCP connection will wait for a keepalive response before
+        # sending another keepalive probe
+        if hasattr(socket, "TCP_KEEPALIVE"):
+            # Only available on Python 3.10+
+            stream.get_extra_info("socket").setsockopt(
+                socket.IPPROTO_TCP,
+                socket.TCP_KEEPALIVE,  # type: ignore
+                KEEPALIVE_RATE,
+            )
+        else:
+            stream.get_extra_info("socket").setsockopt(
+                socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, KEEPALIVE_RATE
+            )
+
         return stream
 
 
