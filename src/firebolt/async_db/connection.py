@@ -304,7 +304,9 @@ class OverriddenHttpBackend(AutoBackend):
         stream.get_extra_info("socket").setsockopt(
             socket.IPPROTO_TCP, keepinterval, KEEPALIVE_RATE  # TCP_KEEPINTVL
         )
-        print("in TCP2")
+        print(f"SET keepalive bool to {stream.get_extra_info('socket').getsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE)}")
+        print(f"SET TCP_KEEPIDLE to {stream.get_extra_info('socket').getsockopt(socket.IPPROTO_TCP, keepidle)}")
+        print(f"SET keepalive bool to {stream.get_extra_info('socket').getsockopt(socket.IPPROTO_TCP, keepinterval)}")
         return stream
 
 
