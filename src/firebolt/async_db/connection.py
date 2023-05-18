@@ -296,11 +296,15 @@ class OverriddenHttpBackend(AutoBackend):
             socket.IPPROTO_TCP, keepidle, KEEPIDLE_RATE
         )
 
-        # Mac only?
+        if hasattr(socket, "TCP_KEEPINTVL"):
+            keepinterval = socket.TCP_KEEPINTVL
+        else:
+            # MacOS version
+            keepinterval = 0x101
         stream.get_extra_info("socket").setsockopt(
-            socket.IPPROTO_TCP, 0x101, 1  # TCP_KEEPINTVL
+            socket.IPPROTO_TCP, keepinterval, KEEPALIVE_RATE  # TCP_KEEPINTVL
         )
-        print("in TCP")
+        print("in TCP2")
         return stream
 
 
