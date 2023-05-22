@@ -1,0 +1,16 @@
+WARNING  firebolt.common.settings:settings.py:102  Passing connection credentials directly in Settings is deprecated.
+ Use Auth object instead.
+ Examples:
+  >>> from firebolt.client.auth import UsernamePassword
+  >>> ...
+  >>> settings = Settings(auth=UsernamePassword(username, password), ...)
+ or
+  >>> from firebolt.client.auth import Token
+  >>> ...
+  >>> settings = Settings(auth=Token(access_token), ...)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases?page.first=1000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases?page.first=1000&filter.name_contains=integration_testing__1684782934 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases?page.first=1000&filter.attached_engine_name_eq=integration_testing__1684782934 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases?page.first=1000&filter.attached_engine_name_contains=integration_testing__1684782934 "HTTP/1.1 200 OK"

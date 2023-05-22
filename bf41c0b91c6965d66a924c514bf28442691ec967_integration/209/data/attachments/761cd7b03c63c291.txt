@@ -1,0 +1,3 @@
+INFO     tests.integration.conftest:conftest.py:27 STOPPED_ENGINE_URL: integration-testing-1684782934-stopped.firebolt.us-east-1.dev.firebolt.io
+INFO     httpx:_client.py:1019 HTTP Request: POST https://integration-testing-1684782934-stopped.firebolt.us-east-1.dev.firebolt.io/?database=integration_testing__1684782934&output_format=JSON_Compact "HTTP/1.1 404 Not Found"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/account/engines?filter.name_contains=integration_testing_1684782934_stopped&filter.current_status_eq=ENGINE_STATUS_RUNNING_REVISION_SERVING "HTTP/1.1 200 OK"
