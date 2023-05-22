@@ -1,0 +1,21 @@
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     firebolt.service.engine:engine.py:148 Creating Engine (name=integration_testing__1684765755_multi_param)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/compute/v1/regions?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/aws/v2/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/instanceTypes?page.first=5000&filter.id_region_id_eq=f1841f9f-4031-4a9a-b3d7-1dc27e7e61ed "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases:getIdByName?database_name=integration_testing__1684765755 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/bindings?page.first=5000&filter.id_engine_id_eq=553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     firebolt.service.binding:binding.py:116 Attaching Engine (engine_id=553528cc-7909-4025-a1ad-175dd058c4e2, name=integration_testing__1684765755_multi_param) to Database (database_id=f1bd0875-4c66-4e16-9fff-2a0dd603a5fa, name=integration_testing__1684765755)
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa/bindings/553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/bindings?page.first=5000&filter.id_engine_id_eq=553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/553528cc-7909-4025-a1ad-175dd058c4e2/engineRevisions/75ca734c-d7ab-409b-99b5-f6bad71ea29c "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/aws/v2/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/instanceTypes?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_multi_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/553528cc-7909-4025-a1ad-175dd058c4e2/engineRevisions/e23472a7-74ed-4a64-9597-2b39ac805b25 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: DELETE https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/553528cc-7909-4025-a1ad-175dd058c4e2 "HTTP/1.1 200 OK"
+INFO     firebolt.model.engine:engine.py:470 Deleting Engine (engine_id=553528cc-7909-4025-a1ad-175dd058c4e2, name=integration_testing__1684765755_multi_param)

@@ -1,0 +1,52 @@
+WARNING  firebolt.common.settings:settings.py:102  Passing connection credentials directly in Settings is deprecated.
+ Use Auth object instead.
+ Examples:
+  >>> from firebolt.client.auth import UsernamePassword
+  >>> ...
+  >>> settings = Settings(auth=UsernamePassword(username, password), ...)
+ or
+  >>> from firebolt.client.auth import Token
+  >>> ...
+  >>> settings = Settings(auth=Token(access_token), ...)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     firebolt.service.engine:engine.py:148 Creating Engine (name=integration_testing__1684765755_single_param)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/compute/v1/regions?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/aws/v2/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/instanceTypes?page.first=5000&filter.id_region_id_eq=f1841f9f-4031-4a9a-b3d7-1dc27e7e61ed "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases:getIdByName?database_name=integration_testing__1684765755 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/bindings?page.first=5000&filter.id_engine_id_eq=2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     firebolt.service.binding:binding.py:116 Attaching Engine (engine_id=2f527e83-15a0-46b3-9ad7-d87f6114792a, name=integration_testing__1684765755_single_param) to Database (database_id=f1bd0875-4c66-4e16-9fff-2a0dd603a5fa, name=integration_testing__1684765755)
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa/bindings/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/bindings?page.first=5000&filter.id_engine_id_eq=2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/databases/f1bd0875-4c66-4e16-9fff-2a0dd603a5fa "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/3ffaae9a-2c6e-445b-bbe0-12552ea585dd "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/aws/v2/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/instanceTypes?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/3ffaae9a-2c6e-445b-bbe0-12552ea585dd "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/26fad212-ee55-43c1-9720-f46d387a167c "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/26fad212-ee55-43c1-9720-f46d387a167c "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/2df4a670-ed15-4d57-af26-6a33e4d236af "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/2df4a670-ed15-4d57-af26-6a33e4d236af "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/2df4a670-ed15-4d57-af26-6a33e4d236af "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines:getIdByName?engine_name=integration_testing__1684765755_single_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a/engineRevisions/2df4a670-ed15-4d57-af26-6a33e4d236af "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: DELETE https://api.dev.firebolt.io/core/v1/accounts/15ff9dd6-32a6-417b-b004-6f69d7cc4c8b/engines/2f527e83-15a0-46b3-9ad7-d87f6114792a "HTTP/1.1 200 OK"
+INFO     firebolt.model.engine:engine.py:470 Deleting Engine (engine_id=2f527e83-15a0-46b3-9ad7-d87f6114792a, name=integration_testing__1684765755_single_param)
