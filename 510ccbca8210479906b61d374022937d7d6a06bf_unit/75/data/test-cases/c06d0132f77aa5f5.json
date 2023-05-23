@@ -1,0 +1,147 @@
+{
+  "uid" : "c06d0132f77aa5f5",
+  "name" : "test_nested_loops",
+  "fullName" : "tests.unit.common.test_util#test_nested_loops",
+  "historyId" : "e2039aeccd24a9d5969ac86a1e8f8466",
+  "time" : {
+    "start" : 1684811019044,
+    "stop" : 1684811019046,
+    "duration" : 2
+  },
+  "description" : "async_to_sync works correctly inside a running loop.",
+  "descriptionHtml" : "<p>async_to_sync works correctly inside a running loop.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "event_loop",
+    "time" : {
+      "start" : 1684811019038,
+      "stop" : 1684811019039,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1684811019039,
+      "stop" : 1684811019043,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "event_loop::0",
+    "time" : {
+      "start" : 1684811019048,
+      "stop" : 1684811019048,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1684811019046,
+      "stop" : 1684811019047,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "asyncio"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.unit.common"
+  }, {
+    "name" : "suite",
+    "value" : "test_util"
+  }, {
+    "name" : "host",
+    "value" : "fv-az571-652"
+  }, {
+    "name" : "thread",
+    "value" : "2346-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.common.test_util"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "d350d83688df7e06",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/510ccbca8210479906b61d374022937d7d6a06bf_unit/599//#testresult/d350d83688df7e06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684810955198,
+          "stop" : 1684810955200,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "59970235e009348d",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/510ccbca8210479906b61d374022937d7d6a06bf_unit/175//#testresult/59970235e009348d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684764694725,
+          "stop" : 1684764694727,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "asyncio" ]
+  },
+  "source" : "c06d0132f77aa5f5.json",
+  "parameterValues" : [ ]
+}
