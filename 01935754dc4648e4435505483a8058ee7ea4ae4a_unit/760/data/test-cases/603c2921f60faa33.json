@@ -1,0 +1,89 @@
+{
+  "uid" : "603c2921f60faa33",
+  "name" : "test_no_deprecation_warning_with_env",
+  "fullName" : "tests.unit.common.test_settings#test_no_deprecation_warning_with_env",
+  "historyId" : "77d0856c7bc06b761fad67d98b3e43df",
+  "time" : {
+    "start" : 1684933005529,
+    "stop" : 1684933005578,
+    "duration" : 49
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert None == 'dummy.firebolt.io'\n +  where None = Settings(auth=<firebolt.client.auth.username_password.UsernamePassword object at 0x7f8c6f2e2710>, user=None, password=None, access_token=None, account_name=None, server=None, default_region='region', use_token_cache=True).server",
+  "statusTrace" : "logger_mock = <MagicMock name='logger' id='140241136889040'>\n\n    @patch(\"firebolt.common.settings.logger\")\n    def test_no_deprecation_warning_with_env(logger_mock: Mock):\n        with patch.dict(\n            os.environ,\n            {\n                \"FIREBOLT_USER\": \"user\",\n                \"FIREBOLT_PASSWORD\": \"password\",\n                \"FIREBOLT_SERVER\": \"dummy.firebolt.io\",\n            },\n            clear=True,\n        ):\n            s = Settings(default_region=\"region\")\n            logger_mock.warning.assert_not_called()\n>           assert s.server == \"dummy.firebolt.io\"\nE           AssertionError: assert None == 'dummy.firebolt.io'\nE            +  where None = Settings(auth=<firebolt.client.auth.username_password.UsernamePassword object at 0x7f8c6f2e2710>, user=None, password=None, access_token=None, account_name=None, server=None, default_region='region', use_token_cache=True).server\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/common/test_settings.py:60: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1684933005526,
+      "stop" : 1684933005528,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1684933005589,
+      "stop" : 1684933005590,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.common"
+  }, {
+    "name" : "suite",
+    "value" : "test_settings"
+  }, {
+    "name" : "host",
+    "value" : "fv-az400-830"
+  }, {
+    "name" : "thread",
+    "value" : "2373-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.common.test_settings"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "603c2921f60faa33.json",
+  "parameterValues" : [ ]
+}
