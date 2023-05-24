@@ -1,0 +1,89 @@
+{
+  "uid" : "52fdd8d380a81080",
+  "name" : "test_statement_to_set[statement5-result5]",
+  "fullName" : "tests.unit.async_db.test_typing_format#test_statement_to_set",
+  "historyId" : "e2dda596b6048b36c7739744157cf5b1",
+  "time" : {
+    "start" : 1684936672840,
+    "stop" : 1684936672841,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1684936672837,
+      "stop" : 1684936672840,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1684936672842,
+      "stop" : 1684936672843,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.async_db"
+  }, {
+    "name" : "suite",
+    "value" : "test_typing_format"
+  }, {
+    "name" : "host",
+    "value" : "fv-az189-834"
+  }, {
+    "name" : "thread",
+    "value" : "2346-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.async_db.test_typing_format"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "result",
+    "value" : "SetParameter(name='a', value=\"some 'string\")"
+  }, {
+    "name" : "statement",
+    "value" : "<Statement 'set a=...' at 0x7FC43BB8F1D0>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "52fdd8d380a81080.json",
+  "parameterValues" : [ "SetParameter(name='a', value=\"some 'string\")", "<Statement 'set a=...' at 0x7FC43BB8F1D0>" ]
+}
