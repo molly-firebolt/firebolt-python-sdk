@@ -1,0 +1,249 @@
+{
+  "uid" : "88e4428602fc30cc",
+  "name" : "test_server_side_async_execution_get_status",
+  "fullName" : "tests.integration.dbapi.async.test_queries_async#test_server_side_async_execution_get_status",
+  "historyId" : "cc8343dd59446a56314616f8fe77b222",
+  "time" : {
+    "start" : 1684940187984,
+    "stop" : 1684940187984,
+    "duration" : 0
+  },
+  "description" : "\n    Test get_status(). Test for three ending conditions: Simply test to see\n    that a StatusQuery object is returned. Queries are succeeding too quickly\n    to be able to check for specific status states.\n    ",
+  "descriptionHtml" : "<pre><code>Test get_status(). Test for three ending conditions: Simply test to see\nthat a StatusQuery object is returned. Queries are succeeding too quickly\nto be able to check for specific status states.\n</code></pre>\n",
+  "status" : "skipped",
+  "statusMessage" : "Skipped: Can't get consistently slow queries so fails significant portion of time. get_status() always returns a QueryStatus object, so this assertion will always pass. Error condition of invalid status is caught in get_status().",
+  "statusTrace" : "('/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/integration/dbapi/async/test_queries_async.py', 462, \"Skipped: Can't get consistently slow queries so fails significant portion of time. get_status() always returns a QueryStatus object, so this assertion will always pass. Error condition of invalid status is caught in get_status().\")",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "database_name",
+    "time" : {
+      "start" : 1684940186462,
+      "stop" : 1684940186463,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_name",
+    "time" : {
+      "start" : 1684940186798,
+      "stop" : 1684940186798,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "api_endpoint",
+    "time" : {
+      "start" : 1684940186798,
+      "stop" : 1684940186798,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "password_auth",
+    "time" : {
+      "start" : 1684940186463,
+      "stop" : 1684940186797,
+      "duration" : 334
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "event_loop",
+    "time" : {
+      "start" : 1684940187989,
+      "stop" : 1684940187990,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "username",
+    "time" : {
+      "start" : 1684940186463,
+      "stop" : 1684940186463,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "password",
+    "time" : {
+      "start" : 1684940186463,
+      "stop" : 1684940186463,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "engine_url",
+    "time" : {
+      "start" : 1684940187990,
+      "stop" : 1684940187990,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "connection",
+    "time" : {
+      "start" : 1684940187990,
+      "stop" : 1684940188345,
+      "duration" : 355
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "event_loop::0",
+    "time" : {
+      "start" : 1684940201084,
+      "stop" : 1684940201084,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "connection::finalizer",
+    "time" : {
+      "start" : 1684940201082,
+      "stop" : 1684940201083,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "asyncio"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip(reason='Can't get consistently slow queries so fails significant portion of time. get_status() always returns a QueryStatus object, so this assertion will always pass. Error condition of invalid status is caught in get_status().')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.integration.dbapi.async"
+  }, {
+    "name" : "suite",
+    "value" : "test_queries_async"
+  }, {
+    "name" : "host",
+    "value" : "fv-az402-454"
+  }, {
+    "name" : "thread",
+    "value" : "2585-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.integration.dbapi.async.test_queries_async"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "e940a9316b106b43",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/5dcdcb583444fe2a1551eebc0b82909207b36841_integration/215//#testresult/e940a9316b106b43",
+        "status" : "skipped",
+        "statusDetails" : "Skipped: Can't get consistently slow queries so fails significant portion of time. get_status() always returns a QueryStatus object, so this assertion will always pass. Error condition of invalid status is caught in get_status().",
+        "time" : {
+          "start" : 1684940095507,
+          "stop" : 1684940095507,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ "asyncio", "@pytest.mark.skip(reason='Can't get consistently slow queries so fails significant portion of time. get_status() always returns a QueryStatus object, so this assertion will always pass. Error condition of invalid status is caught in get_status().')" ]
+  },
+  "source" : "88e4428602fc30cc.json",
+  "parameterValues" : [ ]
+}

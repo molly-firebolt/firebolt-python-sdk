@@ -1,0 +1,18 @@
+WARNING  firebolt.common.settings:settings.py:102  Passing connection credentials directly in Settings is deprecated.
+ Use Auth object instead.
+ Examples:
+  >>> from firebolt.client.auth import UsernamePassword
+  >>> ...
+  >>> settings = Settings(auth=UsernamePassword(username, password), ...)
+ or
+  >>> from firebolt.client.auth import Token
+  >>> ...
+  >>> settings = Settings(auth=Token(access_token), ...)
+INFO     tests.integration.conftest:conftest.py:27 STOPPED_ENGINE_URL: integration-testing-1684939982-stopped.firebolt.us-east-1.staging.firebolt.io
+INFO     tests.integration.conftest:conftest.py:27 ENGINE_NAME: integration_testing__1684939982
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases:getIdByName?database_name=integration_testing__1684939982 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/e1647914-6276-40b6-94cf-b7e667603a30 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/bindings?page.first=5000&filter.id_database_id_eq=e1647914-6276-40b6-94cf-b7e667603a30 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/a8172468-4b0b-4ef6-8df9-83d4206ee328 "HTTP/1.1 200 OK"

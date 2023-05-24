@@ -1,0 +1,21 @@
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     firebolt.service.engine:engine.py:148 Creating Engine (name=integration_testing__1684939982_multi_param)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/compute/v1/regions?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/aws/v2/accounts/297db526-f0c1-46f2-9f67-6e9142931479/instanceTypes?page.first=5000&filter.id_region_id_eq=c098599a-3adf-4d61-b084-2672a03b96e1 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases:getIdByName?database_name=integration_testing__1684939982 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/e1647914-6276-40b6-94cf-b7e667603a30 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/bindings?page.first=5000&filter.id_engine_id_eq=324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     firebolt.service.binding:binding.py:116 Attaching Engine (engine_id=324c51ed-107b-4f7e-9bd5-94e4e1f368c4, name=integration_testing__1684939982_multi_param) to Database (database_id=e1647914-6276-40b6-94cf-b7e667603a30, name=integration_testing__1684939982)
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/e1647914-6276-40b6-94cf-b7e667603a30/bindings/324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/bindings?page.first=5000&filter.id_engine_id_eq=324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/e1647914-6276-40b6-94cf-b7e667603a30 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/324c51ed-107b-4f7e-9bd5-94e4e1f368c4/engineRevisions/f81e4d80-e6eb-4add-bcb2-09aa5e4b695b "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/aws/v2/accounts/297db526-f0c1-46f2-9f67-6e9142931479/instanceTypes?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines:getIdByName?engine_name=integration_testing__1684939982_multi_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/324c51ed-107b-4f7e-9bd5-94e4e1f368c4/engineRevisions/94c4dd7a-5c94-46e2-8e0b-220f47303aed "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: DELETE https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/324c51ed-107b-4f7e-9bd5-94e4e1f368c4 "HTTP/1.1 200 OK"
+INFO     firebolt.model.engine:engine.py:470 Deleting Engine (engine_id=324c51ed-107b-4f7e-9bd5-94e4e1f368c4, name=integration_testing__1684939982_multi_param)
