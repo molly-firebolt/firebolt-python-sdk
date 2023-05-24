@@ -1,0 +1,125 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "firebolt.utils.exception.OperationalError: Error executing query:\nLine 1, Column 282: Invalid SQL: Type \"DATE_EXT\" does not exist\nselect 1 as uint8, -1 as int_8, 257 as uint16, -257 as int16, 80000 as uint32, -80000 as int32, 30000000000 as uint64, -30000000000 as int64, cast(1.23 AS FLOAT) as float32, 1.2345678901234 as float64, 'text' as \"string\", CAST('2021-03-28' AS DATE) as \"date\", CAST('1860-03-04' AS DATE_EXT) as \"date32\",pgdate '0001-01-01' as \"pgdate\", CAST('2019-07-31 01:01:01' AS DATETIME) as \"datetime\", CAST('2019-07-31 01:01:01.1234' AS TIMESTAMP_EXT(4)) as \"datetime64\", CAST('1111-01-05 17:04:42.123456' as timestampntz) as \"timestampntz\", '1111-01-05 17:04:42.123456'::timestamptz as \"timestamptz\", true as \"boolean\", [1,2,3,4] as \"array\", cast('1231232.123459999990457054844258706536' as decimal(38,30)) as \"decimal\", cast(null as  int) as \"nullable\", 'abc123'::bytea as \"bytea\"\n                                                                                                                                                                                                                                                                                         ^",
+      "children" : [ {
+        "name" : "test_select",
+        "uid" : "1aaf656f943d81a9",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940095303,
+          "stop" : 1684940095835,
+          "duration" : 532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_engine_name",
+        "uid" : "98e1fd77efaa9b77",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940095438,
+          "stop" : 1684940095961,
+          "duration" : 523
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_no_engine",
+        "uid" : "fdfdc2d969d087f5",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940095544,
+          "stop" : 1684940096004,
+          "duration" : 460
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_engine_name",
+        "uid" : "180908670c0bb90",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940097127,
+          "stop" : 1684940097600,
+          "duration" : 473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_select",
+        "uid" : "154ef5fccc7a4de9",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940097908,
+          "stop" : 1684940098363,
+          "duration" : 455
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_no_engine",
+        "uid" : "a477d6d3ae4a1182",
+        "parentUid" : "1f86437b7b56126291215494d58924a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684940098013,
+          "stop" : 1684940098402,
+          "duration" : 389
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1f86437b7b56126291215494d58924a1"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 0 == -1\n  +0\n  --1",
+      "children" : [ {
+        "name" : "test_drop_create",
+        "uid" : "2bfaff9ee5597ba1",
+        "parentUid" : "50e4d9ed80e784cdd35836a389f91a67",
+        "status" : "failed",
+        "time" : {
+          "start" : 1684940095808,
+          "stop" : 1684940098404,
+          "duration" : 2596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_drop_create",
+        "uid" : "e14fdc2fdf2116",
+        "parentUid" : "50e4d9ed80e784cdd35836a389f91a67",
+        "status" : "failed",
+        "time" : {
+          "start" : 1684940098691,
+          "stop" : 1684940101343,
+          "duration" : 2652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "50e4d9ed80e784cdd35836a389f91a67"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
