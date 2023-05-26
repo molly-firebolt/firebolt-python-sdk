@@ -1,0 +1,31 @@
+WARNING  firebolt.common.settings:settings.py:102  Passing connection credentials directly in Settings is deprecated.
+ Use Auth object instead.
+ Examples:
+  >>> from firebolt.client.auth import UsernamePassword
+  >>> ...
+  >>> settings = Settings(auth=UsernamePassword(username, password), ...)
+ or
+  >>> from firebolt.client.auth import Token
+  >>> ...
+  >>> settings = Settings(auth=Token(access_token), ...)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/iam/v2/account "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/compute/v1/providers "HTTP/1.1 200 OK"
+INFO     firebolt.service.engine:engine.py:148 Creating Engine (name=integration_testing__1685113439_multi_param)
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/compute/v1/regions?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/aws/v2/accounts/297db526-f0c1-46f2-9f67-6e9142931479/instanceTypes?page.first=5000&filter.id_region_id_eq=c098599a-3adf-4d61-b084-2672a03b96e1 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases:getIdByName?database_name=integration_testing__1685113439 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/f41b5e5e-35e5-4f42-b16b-8a1363eaf8df "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/bindings?page.first=5000&filter.id_engine_id_eq=39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     firebolt.service.binding:binding.py:116 Attaching Engine (engine_id=39d1f338-09be-4805-994b-691a4bec1e15, name=integration_testing__1685113439_multi_param) to Database (database_id=f41b5e5e-35e5-4f42-b16b-8a1363eaf8df, name=integration_testing__1685113439)
+INFO     httpx:_client.py:1019 HTTP Request: POST https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/f41b5e5e-35e5-4f42-b16b-8a1363eaf8df/bindings/39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/bindings?page.first=5000&filter.id_engine_id_eq=39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/databases/f41b5e5e-35e5-4f42-b16b-8a1363eaf8df "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/39d1f338-09be-4805-994b-691a4bec1e15/engineRevisions/7bdd7a7c-02fd-4bd5-9ea1-9562dd5587dc "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/aws/v2/accounts/297db526-f0c1-46f2-9f67-6e9142931479/instanceTypes?page.first=5000 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: PATCH https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines:getIdByName?engine_name=integration_testing__1685113439_multi_param "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: GET https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/39d1f338-09be-4805-994b-691a4bec1e15/engineRevisions/0b135155-eeac-4d73-9595-3cc6f9f0b050 "HTTP/1.1 200 OK"
+INFO     httpx:_client.py:1019 HTTP Request: DELETE https://api.staging.firebolt.io/core/v1/accounts/297db526-f0c1-46f2-9f67-6e9142931479/engines/39d1f338-09be-4805-994b-691a4bec1e15 "HTTP/1.1 200 OK"
+INFO     firebolt.model.engine:engine.py:470 Deleting Engine (engine_id=39d1f338-09be-4805-994b-691a4bec1e15, name=integration_testing__1685113439_multi_param)

@@ -1,0 +1,177 @@
+{
+  "uid" : "c796648bb6c7461",
+  "name" : "test_query_errors[CREATE DIMENSION TABLE dummy(id INT)]",
+  "fullName" : "tests.integration.dbapi.sync.test_system_engine#test_query_errors",
+  "historyId" : "35d415edfced0a584f28483bfd16fbfd",
+  "time" : {
+    "start" : 1685113701713,
+    "stop" : 1685113701988,
+    "duration" : 275
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "connection_system_engine",
+    "time" : {
+      "start" : 1685113701142,
+      "stop" : 1685113701712,
+      "duration" : 570
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_name",
+    "time" : {
+      "start" : 1685113663027,
+      "stop" : 1685113663027,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "password",
+    "time" : {
+      "start" : 1685113662160,
+      "stop" : 1685113662160,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "password_auth",
+    "time" : {
+      "start" : 1685113662160,
+      "stop" : 1685113662524,
+      "duration" : 364
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "username",
+    "time" : {
+      "start" : 1685113662159,
+      "stop" : 1685113662160,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "api_endpoint",
+    "time" : {
+      "start" : 1685113662524,
+      "stop" : 1685113662524,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "178c3c8cfe64385f",
+      "name" : "log",
+      "source" : "178c3c8cfe64385f.txt",
+      "type" : "text/plain",
+      "size" : 710
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "connection_system_engine::0",
+    "time" : {
+      "start" : 1685113701990,
+      "stop" : 1685113701990,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.integration.dbapi.sync"
+  }, {
+    "name" : "suite",
+    "value" : "test_system_engine"
+  }, {
+    "name" : "host",
+    "value" : "fv-az576-392"
+  }, {
+    "name" : "thread",
+    "value" : "2580-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.integration.dbapi.sync.test_system_engine"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "query",
+    "value" : "'CREATE DIMENSION TABLE dummy(id INT)'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c796648bb6c7461.json",
+  "parameterValues" : [ "'CREATE DIMENSION TABLE dummy(id INT)'" ]
+}
