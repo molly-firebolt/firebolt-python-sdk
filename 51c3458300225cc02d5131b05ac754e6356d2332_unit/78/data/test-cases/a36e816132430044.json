@@ -1,0 +1,141 @@
+{
+  "uid" : "a36e816132430044",
+  "name" : "test_parse_value_datetime[2021-12-31 23:59:59.1234-expected0-str provided]",
+  "fullName" : "tests.unit.async_db.test_typing_parse#test_parse_value_datetime",
+  "historyId" : "422a082edb80562221bc622b7559cf15",
+  "time" : {
+    "start" : 1685070209554,
+    "stop" : 1685070209554,
+    "duration" : 0
+  },
+  "description" : "parse_value parses all date values correctly.",
+  "descriptionHtml" : "<p>parse_value parses all date values correctly.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1685070209551,
+      "stop" : 1685070209553,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1685070209556,
+      "stop" : 1685070209557,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.async_db"
+  }, {
+    "name" : "suite",
+    "value" : "test_typing_parse"
+  }, {
+    "name" : "host",
+    "value" : "fv-az398-265"
+  }, {
+    "name" : "thread",
+    "value" : "2398-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.async_db.test_typing_parse"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'str provided'"
+  }, {
+    "name" : "expected",
+    "value" : "datetime.datetime(2021, 12, 31, 23, 59, 59, 123400)"
+  }, {
+    "name" : "value",
+    "value" : "'2021-12-31 23:59:59.1234'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "7b699146db87438a",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/604//#testresult/7b699146db87438a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685070145106,
+          "stop" : 1685070145106,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "3c6fc6af1fd5f2cd",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/77//#testresult/3c6fc6af1fd5f2cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684983805033,
+          "stop" : 1684983805033,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a21698978311f0b2",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/603//#testresult/a21698978311f0b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684983753849,
+          "stop" : 1684983753850,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "5094a7b4336e1c59",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/183//#testresult/5094a7b4336e1c59",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684940242736,
+          "stop" : 1684940242737,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a36e816132430044.json",
+  "parameterValues" : [ "'str provided'", "datetime.datetime(2021, 12, 31, 23, 59, 59, 123400)", "'2021-12-31 23:59:59.1234'" ]
+}

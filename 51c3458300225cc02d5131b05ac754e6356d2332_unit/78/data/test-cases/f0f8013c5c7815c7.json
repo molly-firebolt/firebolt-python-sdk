@@ -1,0 +1,139 @@
+{
+  "uid" : "f0f8013c5c7815c7",
+  "name" : "test_split_format_sql[select * from t;insert into t values (1, 2)-params5-result5]",
+  "fullName" : "tests.unit.async_db.test_typing_format#test_split_format_sql",
+  "historyId" : "76bda0eabb88fb8c9853c2d7a7dbdef3",
+  "time" : {
+    "start" : 1685070209331,
+    "stop" : 1685070209334,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1685070209328,
+      "stop" : 1685070209330,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1685070209335,
+      "stop" : 1685070209336,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.async_db"
+  }, {
+    "name" : "suite",
+    "value" : "test_typing_format"
+  }, {
+    "name" : "host",
+    "value" : "fv-az398-265"
+  }, {
+    "name" : "thread",
+    "value" : "2398-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.async_db.test_typing_format"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "params",
+    "value" : "()"
+  }, {
+    "name" : "query",
+    "value" : "'select * from t;insert into t values (1, 2)'"
+  }, {
+    "name" : "result",
+    "value" : "['select * from t', 'insert into t values (1, 2)']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "5be290378401fe29",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/604//#testresult/5be290378401fe29",
+        "status" : "passed",
+        "time" : {
+          "start" : 1685070144897,
+          "stop" : 1685070144899,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "dd42b2c1d24a260a",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/77//#testresult/dd42b2c1d24a260a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684983804823,
+          "stop" : 1684983804825,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "5310dc3b990b7c9c",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/603//#testresult/5310dc3b990b7c9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684983753639,
+          "stop" : 1684983753641,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "157bf905779886d4",
+        "reportUrl" : "https://firebolt-db.github.io/firebolt-python-sdk/51c3458300225cc02d5131b05ac754e6356d2332_unit/183//#testresult/157bf905779886d4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684940242487,
+          "stop" : 1684940242489,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f0f8013c5c7815c7.json",
+  "parameterValues" : [ "()", "'select * from t;insert into t values (1, 2)'", "['select * from t', 'insert into t values (1, 2)']" ]
+}
