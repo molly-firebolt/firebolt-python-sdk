@@ -1,0 +1,92 @@
+{
+  "uid" : "ffbf01b15109f81a",
+  "name" : "test_format_statement[statement3-params3-insert into table values (1, '1', '?')]",
+  "fullName" : "tests.unit.async_db.test_typing_format#test_format_statement",
+  "historyId" : "ef66de17fdc3d21ab3a19abf47791e7f",
+  "time" : {
+    "start" : 1685442400981,
+    "stop" : 1685442400981,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1685442400977,
+      "stop" : 1685442400980,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1685442400983,
+      "stop" : 1685442400983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.async_db"
+  }, {
+    "name" : "suite",
+    "value" : "test_typing_format"
+  }, {
+    "name" : "host",
+    "value" : "fv-az247-585"
+  }, {
+    "name" : "thread",
+    "value" : "2412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.async_db.test_typing_format"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "params",
+    "value" : "(1, '1')"
+  }, {
+    "name" : "result",
+    "value" : "'insert into table values (1, '1', '?')'"
+  }, {
+    "name" : "statement",
+    "value" : "<Statement 'insert...' at 0x7FFA6A66FE50>"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ffbf01b15109f81a.json",
+  "parameterValues" : [ "(1, '1')", "'insert into table values (1, '1', '?')'", "<Statement 'insert...' at 0x7FFA6A66FE50>" ]
+}
