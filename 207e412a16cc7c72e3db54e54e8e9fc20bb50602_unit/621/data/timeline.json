@@ -1,0 +1,2860 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az1128-762",
+    "children" : [ {
+      "name" : "2315-MainThread",
+      "children" : [ {
+        "name" : "test_connection_unclosed_warnings",
+        "uid" : "2439ec24e842f140",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539308239,
+          "stop" : 1686539308364,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value12-'2022-01-10 01:01:01']",
+        "uid" : "baf67a819364844b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301125,
+          "stop" : 1686539301125,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''2022-01-10 01:01:01''", "datetime.datetime(2022, 1, 10, 1, 1, 1)" ]
+      }, {
+        "name" : "test_format_statement[statement4-params4-select * from t where /*comment ?*/ id == '*/ 1 == 1 or /*']",
+        "uid" : "bdddb0c7a6553261",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301211,
+          "stop" : 1686539301212,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('*/ 1 == 1 or /*',)", "'select * from t where /*comment ?*/ id == '*/ 1 == 1 or /*''", "<Statement 'select...' at 0x7F84D07BE0D0>" ]
+      }, {
+        "name" : "test_cursor_initialized",
+        "uid" : "898c19d6428878f3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307231,
+          "stop" : 1686539307506,
+          "duration" : 275
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_date[2021-12-31-expected0-str provided]",
+        "uid" : "6ab9bd810a03f96e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301444,
+          "stop" : 1686539301445,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'str provided'", "datetime.date(2021, 12, 31)", "'2021-12-31'" ]
+      }, {
+        "name" : "test_cursor_skip_parse",
+        "uid" : "82437b8b1a3d7161",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539311734,
+          "stop" : 1686539311738,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_engine_restart",
+        "uid" : "cc22d287116effcb",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539315044,
+          "stop" : 1686539315192,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value15-[1, 2, 3]]",
+        "uid" : "23fbb73f87189eba",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301146,
+          "stop" : 1686539301147,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'[1, 2, 3]'", "[1, 2, 3]" ]
+      }, {
+        "name" : "test_settings_happy_path[fields2]",
+        "uid" : "79def1ff2616812e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305981,
+          "stop" : 1686539305981,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('auth', 'account_name', 'server', 'default_region')" ]
+      }, {
+        "name" : "test_auth_uses_same_token_if_valid",
+        "uid" : "891303afcc07a8f5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539303145,
+          "stop" : 1686539303292,
+          "duration" : 147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connection_token_caching",
+        "uid" : "e2e67162660ecbb9",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539296600,
+          "stop" : 1686539297005,
+          "duration" : 405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_token_storage_happy_path",
+        "uid" : "1879179514b457fb",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306315,
+          "stop" : 1686539306473,
+          "duration" : 158
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_date[None-None-None provided]",
+        "uid" : "3761bb4a08751334",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301467,
+          "stop" : 1686539301467,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'None provided'", "None", "None" ]
+      }, {
+        "name" : "test_cursor_server_side_async_cancel",
+        "uid" : "cb81efd90055301d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312079,
+          "stop" : 1686539312081,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack11-map11-expected11]",
+        "uid" : "450d53b8bb0c1f2f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316682,
+          "stop" : 1686539316683,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'Redash': '0.2.2'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='run_query', filename='my_redash/redash/query_runner/firebolt.py')]" ]
+      }, {
+        "name" : "test_connect_empty_parameters",
+        "uid" : "32bcbcfee38c3be4",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307523,
+          "stop" : 1686539307524,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_user_agent[drivers1-clients1-PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1]",
+        "uid" : "e9cbd355d32a3f82",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316719,
+          "stop" : 1686539316732,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[]", "[('ConnectorA', '0.1.1')]", "'PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1'" ]
+      }, {
+        "name" : "test_cursor_no_query",
+        "uid" : "13cacbf623c6b7f8",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310078,
+          "stop" : 1686539310084,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[-params0-result0]",
+        "uid" : "2e8382094f331d8b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301233,
+          "stop" : 1686539301234,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "''", "['']" ]
+      }, {
+        "name" : "test_user_agent[drivers3-clients3-PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0]",
+        "uid" : "1cdd98472b0e698b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316759,
+          "stop" : 1686539316771,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[]", "[('ConnectorA', '0.1.1'), ('ConnectorB', '0.2.0')]", "'PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0'" ]
+      }, {
+        "name" : "test_auth_adds_header",
+        "uid" : "c37cec1c5eeb2c66",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539304084,
+          "stop" : 1686539304085,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_helpers",
+        "uid" : "3b845ce24a1b9bce",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301553,
+          "stop" : 1686539301553,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_client_retry",
+        "uid" : "3d30ba00f8b1a15",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302389,
+          "stop" : 1686539302524,
+          "duration" : 135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[test' OR '1' == '1-'test\\\\' OR \\\\'1\\\\' == \\\\'1']",
+        "uid" : "27661f66525d2e9e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301054,
+          "stop" : 1686539301054,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''test\\' OR \\'1\\' == \\'1''", "'test' OR '1' == '1'" ]
+      }, {
+        "name" : "test_settings_happy_path[fields1]",
+        "uid" : "34cc6c3e821d39c3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305974,
+          "stop" : 1686539305974,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('access_token', 'account_name', 'server', 'default_region')" ]
+      }, {
+        "name" : "test_parse_value_datetime[0001-01-01 00:00:00.000000-expected1-range low provided]",
+        "uid" : "4ced27c999f5c6d7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301490,
+          "stop" : 1686539301490,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'range low provided'", "datetime.datetime(1, 1, 1, 0, 0)", "'0001-01-01 00:00:00.000000'" ]
+      }, {
+        "name" : "test_statement_to_set[statement5-result5]",
+        "uid" : "4800a9d1caa5a86e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301368,
+          "stop" : 1686539301368,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='a', value=\"some 'string\")", "<Statement 'set a=...' at 0x7F84D07C6250>" ]
+      }, {
+        "name" : "test_parse_value_float",
+        "uid" : "9bdc3e7e85f23c23",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301432,
+          "stop" : 1686539301432,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_fetchmany",
+        "uid" : "4664e917660dc85c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310788,
+          "stop" : 1686539310795,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[select * from t; set a = b;-params8-result8]",
+        "uid" : "e84db42b41083b0f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301304,
+          "stop" : 1686539301306,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from t; set a = b;'", "['select * from t', SetParameter(name='a', value='b')]" ]
+      }, {
+        "name" : "test_cursor_no_query",
+        "uid" : "a308ff2c1a240b2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539298220,
+          "stop" : 1686539298227,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_engine_name",
+        "uid" : "e78c38ecd765e561",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307638,
+          "stop" : 1686539307982,
+          "duration" : 344
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value8-1.1229999999999999982236431605997495353221893310546875]",
+        "uid" : "6c0e05f07fff62af",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301097,
+          "stop" : 1686539301097,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1.1229999999999999982236431605997495353221893310546875'", "Decimal('1.1229999999999999982236431605997495353221893310546875')" ]
+      }, {
+        "name" : "test_client_retry",
+        "uid" : "64dc2a2dfb527eaa",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301575,
+          "stop" : 1686539301707,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[-'']",
+        "uid" : "e443c306f5d946f0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301040,
+          "stop" : 1686539301040,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''''", "''" ]
+      }, {
+        "name" : "test_auth_refresh_on_expiration",
+        "uid" : "30d00c2965aeb095",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539303764,
+          "stop" : 1686539303912,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value7-1.123]",
+        "uid" : "e0de0ef92c289ae7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301089,
+          "stop" : 1686539301090,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1.123'", "Decimal('1.123')" ]
+      }, {
+        "name" : "test_detect_connectors[stack7-map7-expected7]",
+        "uid" : "ca1d3438eca7814e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316648,
+          "stop" : 1686539316649,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'Airflow': '0.1.3'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='get_conn', filename='firebolt_provider/hooks/firebolt.py')]" ]
+      }, {
+        "name" : "test_parse_value_datetime[2021-12-31 23:59:59.1234+05:30:12-expected4-timezone with seconds provided]",
+        "uid" : "619a846ed10061",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301512,
+          "stop" : 1686539301513,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'timezone with seconds provided'", "datetime.datetime(2021, 12, 31, 23, 59, 59, 123400, tzinfo=datetime.timezone(datetime.timedelta(seconds=19812)))", "'2021-12-31 23:59:59.1234+05:30:12'" ]
+      }, {
+        "name" : "test_database_update",
+        "uid" : "bd1d51fd52b803a8",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313116,
+          "stop" : 1686539313256,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_with_auth",
+        "uid" : "a6fa24ea3f4e267f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539309156,
+          "stop" : 1686539309341,
+          "duration" : 185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_datetime[2021-12-31 23:59:59.1234-expected0-str provided]",
+        "uid" : "a17648219c33fb24",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301482,
+          "stop" : 1686539301482,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'str provided'", "datetime.datetime(2021, 12, 31, 23, 59, 59, 123400)", "'2021-12-31 23:59:59.1234'" ]
+      }, {
+        "name" : "test_cursor_set_statements",
+        "uid" : "c596d36da0baed4b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299771,
+          "stop" : 1686539299782,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_fetchall",
+        "uid" : "6345a3ff5a4961d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310961,
+          "stop" : 1686539310967,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_has_exceptions",
+        "uid" : "c5e7cb5c52835c87",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312606,
+          "stop" : 1686539312606,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set_errors[statement0-InterfaceError]",
+        "uid" : "60a9f6f2bdca861c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301390,
+          "stop" : 1686539301390,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "<class 'firebolt.utils.exception.InterfaceError'>", "<Statement 'set' at 0x7F84D07C6C50>" ]
+      }, {
+        "name" : "test_parse_value_datetime[None-None-None provided]",
+        "uid" : "f8288cbef4d7030e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301520,
+          "stop" : 1686539301520,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'None provided'", "None", "None" ]
+      }, {
+        "name" : "test_cursor_server_side_async_execute_errors",
+        "uid" : "a39f8c137135872d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539298804,
+          "stop" : 1686539298833,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[1-1]",
+        "uid" : "a540c0ac980aeeb9",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301075,
+          "stop" : 1686539301076,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "1" ]
+      }, {
+        "name" : "test_detect_connectors[stack12-map12-expected12]",
+        "uid" : "ad04c2399e3f289c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316691,
+          "stop" : 1686539316692,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'Prefect': '0.2.3'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='run', filename='root/prefect/tasks/firebolt/firebolt.py')]" ]
+      }, {
+        "name" : "test_format_value[value16-['a', 'b', 'c']]",
+        "uid" : "73d9450f6a877c05",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301153,
+          "stop" : 1686539301153,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'['a', 'b', 'c']'", "('a', 'b', 'c')" ]
+      }, {
+        "name" : "test_split_format_error",
+        "uid" : "ced35a545da810ab",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301323,
+          "stop" : 1686539301326,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_error",
+        "uid" : "90be700dd76645ea",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301012,
+          "stop" : 1686539301015,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_user_agent[drivers0-clients0-PythonSDK/2 (Python 1; Win; ciso)]",
+        "uid" : "f174d5155f43a87f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316700,
+          "stop" : 1686539316712,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[]", "[]", "'PythonSDK/2 (Python 1; Win; ciso)'" ]
+      }, {
+        "name" : "test_engine_create_with_kwargs_fail",
+        "uid" : "3758d41ea24941f0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313624,
+          "stop" : 1686539313767,
+          "duration" : 143
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[select * from t where id == ?-params7-result7]",
+        "uid" : "f56412063398dda2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301295,
+          "stop" : 1686539301296,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "((1,), (2,))", "'select * from t where id == ?'", "['select * from t where id == 1', 'select * from t where id == 2']" ]
+      }, {
+        "name" : "test_token_expired",
+        "uid" : "3c41a74ea553b96",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305959,
+          "stop" : 1686539305959,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_settings_auth_credentials[kwargs1]",
+        "uid" : "1364bc4cdbbaeccb",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305995,
+          "stop" : 1686539305995,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'access_token': 'access_token', 'user': 'user', 'password': 'password', 'server': 'server', 'default_region': 'default_region'}" ]
+      }, {
+        "name" : "test_token_invalid",
+        "uid" : "75855f13cb5cb081",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305873,
+          "stop" : 1686539305949,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_set_statements",
+        "uid" : "b5685313ddf97498",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539311314,
+          "stop" : 1686539311324,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_incorrect_user_agent[drivers5-Connector1.1]",
+        "uid" : "b36f2a7312d16dc1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316898,
+          "stop" : 1686539316910,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'Connector1.1'", "()" ]
+      }, {
+        "name" : "test_detect_connectors[stack0-map0-expected0]",
+        "uid" : "fb57c7528df1ec37",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316589,
+          "stop" : 1686539316589,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'FireboltCLI': '0.1.1'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='create_connection', filename='dir1/dir2/firebolt_cli/utils.py'), StackItem(function='dummy', filename='dummy.py')]" ]
+      }, {
+        "name" : "test_cursor_execute",
+        "uid" : "e3896880ce3197af",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539298399,
+          "stop" : 1686539298415,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_datetime[2021-12-31 23:59:59.1234-03-expected3-timezone provided]",
+        "uid" : "e86507afcc4b903e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301505,
+          "stop" : 1686539301505,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'timezone provided'", "datetime.datetime(2021, 12, 31, 23, 59, 59, 123400, tzinfo=datetime.timezone(datetime.timedelta(days=-1, seconds=75600)))", "'2021-12-31 23:59:59.1234-03'" ]
+      }, {
+        "name" : "test_connect_access_token",
+        "uid" : "54e78922fab2c8f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307533,
+          "stop" : 1686539307619,
+          "duration" : 86
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[insert into t values (1, 2);select * from t;-params6-result6]",
+        "uid" : "b381cbf374ea6240",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301285,
+          "stop" : 1686539301287,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'insert into t values (1, 2);select * from t;'", "['insert into t values (1, 2)', 'select * from t']" ]
+      }, {
+        "name" : "test_format_statement[statement0-params0-select * from table]",
+        "uid" : "9cb3fcaf7bfca499",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301181,
+          "stop" : 1686539301181,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from table'", "<Statement 'select...' at 0x7F84D07A7B50>" ]
+      }, {
+        "name" : "test_format_statement_errors",
+        "uid" : "cb0413ef143330fe",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301226,
+          "stop" : 1686539301227,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_database_get_by_name",
+        "uid" : "f467f1c6305103df",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312794,
+          "stop" : 1686539312938,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_async_to_sync_thread",
+        "uid" : "1ddf2912222a3610",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306881,
+          "stop" : 1686539306885,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connection_token_caching",
+        "uid" : "210ec1e6b74cea6b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539308667,
+          "stop" : 1686539309066,
+          "duration" : 399
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_state",
+        "uid" : "849250feacbd09ef",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539309746,
+          "stop" : 1686539309751,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_client_different_auths",
+        "uid" : "28036f5a23b8a170",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301722,
+          "stop" : 1686539302002,
+          "duration" : 280
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack3-map3-expected3]",
+        "uid" : "d449396be19d134",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316614,
+          "stop" : 1686539316615,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'AirbyteSource': ''}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='establish_connection', filename='source_firebolt/source.py')]" ]
+      }, {
+        "name" : "test_nested_loops",
+        "uid" : "1a96079f1268f67e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306901,
+          "stop" : 1686539306903,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_binary",
+        "uid" : "d4a361dc2e07545d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301411,
+          "stop" : 1686539301411,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_has_exceptions",
+        "uid" : "5d6a9d2ae940644",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301032,
+          "stop" : 1686539301033,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[abc-'\\\\x61\\\\x62\\\\x63']",
+        "uid" : "6283fe82c7b6be64",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301167,
+          "stop" : 1686539301167,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''\\x61\\x62\\x63''", "<class 'bytes'>" ]
+      }, {
+        "name" : "test_auth_adds_header",
+        "uid" : "45d7180048d1be2d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539303302,
+          "stop" : 1686539303302,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_multi_statement",
+        "uid" : "b0b8f3cbe17ba902",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299585,
+          "stop" : 1686539299599,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_date[0001-01-01-expected1-range low provided]",
+        "uid" : "76eeb595c86d34c3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301452,
+          "stop" : 1686539301452,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'range low provided'", "datetime.date(1, 1, 1)", "'0001-01-01'" ]
+      }, {
+        "name" : "test_async_to_sync_happy_path",
+        "uid" : "6e55f7118fab91dc",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306858,
+          "stop" : 1686539306874,
+          "duration" : 16
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_date[2021-12-31 23:59:59-expected4-datetime provided]",
+        "uid" : "a8f7777b3e36f9e3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301475,
+          "stop" : 1686539301475,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'datetime provided'", "datetime.date(2021, 12, 31)", "'2021-12-31 23:59:59'" ]
+      }, {
+        "name" : "test_client_account_id",
+        "uid" : "afefa98bf218cf85",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302839,
+          "stop" : 1686539302972,
+          "duration" : 133
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_initialized",
+        "uid" : "3900881426585e3b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295382,
+          "stop" : 1686539295669,
+          "duration" : 287
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_fetchone",
+        "uid" : "a2b5356f26f16774",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310611,
+          "stop" : 1686539310618,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_client_account_id",
+        "uid" : "b081be369a57229b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302019,
+          "stop" : 1686539302195,
+          "duration" : 176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_set_parameters_sent",
+        "uid" : "7094aed267cc36f1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539311493,
+          "stop" : 1686539311506,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value11-'2022-01-10']",
+        "uid" : "4b48168e78f175f5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301117,
+          "stop" : 1686539301118,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''2022-01-10''", "datetime.date(2022, 1, 10)" ]
+      }, {
+        "name" : "test_cursor_multi_statement",
+        "uid" : "563ba969ff28495",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539311134,
+          "stop" : 1686539311147,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_region",
+        "uid" : "166fbc7c20c506c2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539315385,
+          "stop" : 1686539315525,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_engine_name",
+        "uid" : "419ecfefeadfb651",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295801,
+          "stop" : 1686539296175,
+          "duration" : 374
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_datetime[9999-12-31 23:59:59.999999-expected2-range high provided]",
+        "uid" : "17be2b2f68188ae5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301497,
+          "stop" : 1686539301498,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'range high provided'", "datetime.datetime(9999, 12, 31, 23, 59, 59, 999999)", "'9999-12-31 23:59:59.999999'" ]
+      }, {
+        "name" : "test_connect_access_token",
+        "uid" : "10ad0470c34e0cf6",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295694,
+          "stop" : 1686539295782,
+          "duration" : 88
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursors_closed_on_close",
+        "uid" : "35378aa74342b264",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295365,
+          "stop" : 1686539295366,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_incorrect_user_agent[drivers0-clients0]",
+        "uid" : "74b7113987249df3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316799,
+          "stop" : 1686539316811,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[]", "[1]" ]
+      }, {
+        "name" : "test_parse_value_str",
+        "uid" : "8074802a12015fe5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301438,
+          "stop" : 1686539301438,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value13-'2022-01-10 00:01:01']",
+        "uid" : "1cfae8d28890f743",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301132,
+          "stop" : 1686539301133,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''2022-01-10 00:01:01''", "datetime.datetime(2022, 1, 10, 1, 1, 1, tzinfo=datetime.timezone(datetime.timedelta(seconds=3600)))" ]
+      }, {
+        "name" : "test_get_sdk_properties",
+        "uid" : "e60f62518651337c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316581,
+          "stop" : 1686539316582,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_refresh_on_expiration",
+        "uid" : "6e007feb1a6167b7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302988,
+          "stop" : 1686539303134,
+          "duration" : 146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_incorrect_user_agent[drivers1-clients1]",
+        "uid" : "f559b58c2f154025",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316819,
+          "stop" : 1686539316831,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[]", "(('Con1', 'v1.1'), 'Con2')" ]
+      }, {
+        "name" : "test_auth_username_password",
+        "uid" : "5393438a221ddfc5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539304694,
+          "stop" : 1686539304825,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_token_happy_path",
+        "uid" : "22c8fe512146e12b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305789,
+          "stop" : 1686539305863,
+          "duration" : 74
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[False-false]",
+        "uid" : "c27a368ca21ad1f2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301110,
+          "stop" : 1686539301111,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'false'", "False" ]
+      }, {
+        "name" : "test_encrypter_happy_path",
+        "uid" : "1ccd45759ea6e91",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306080,
+          "stop" : 1686539306151,
+          "duration" : 71
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack2-map2-expected2]",
+        "uid" : "e52e39e7eda4df15",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316606,
+          "stop" : 1686539316607,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'SQLAlchemy': '0.1.2'}", "[('SQLAlchemy', 'connect', PosixPath('sqlalchemy/engine/default.py'), 'firebolt_db')]", "[StackItem(function='connect', filename='sqlalchemy/engine/default.py')]" ]
+      }, {
+        "name" : "test_auth_token_storage",
+        "uid" : "f0b66269316a1845",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539304093,
+          "stop" : 1686539304465,
+          "duration" : 372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack5-map5-expected5]",
+        "uid" : "183e6a034c79c11d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316631,
+          "stop" : 1686539316632,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'AirbyteDestination': ''}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='establish_connection', filename='destination_firebolt/destination.py')]" ]
+      }, {
+        "name" : "test_auth_token_storage",
+        "uid" : "b0e2f6cef0d8a03b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539303309,
+          "stop" : 1686539303679,
+          "duration" : 370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_error_handling[ServiceAccount]",
+        "uid" : "4bfc2da370944cba",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305314,
+          "stop" : 1686539305777,
+          "duration" : 463
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "<class 'firebolt.client.auth.service_account.ServiceAccount'>" ]
+      }, {
+        "name" : "test_format_value[1.123-1.123]",
+        "uid" : "f26b39043ffd48b0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301082,
+          "stop" : 1686539301083,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1.123'", "1.123" ]
+      }, {
+        "name" : "test_format_statement[statement5-params5-select * from t where id == '\\\\' or \\\\'\\\\' == \\\\'']",
+        "uid" : "377747df59cc3923",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301219,
+          "stop" : 1686539301220,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "(\"' or '' == '\",)", "'select * from t where id == '\\' or \\'\\' == \\'''", "<Statement 'select...' at 0x7F84D07BE4D0>" ]
+      }, {
+        "name" : "test_split_format_sql[select * from t where id == ?;-params4-result4]",
+        "uid" : "3642e7ab3eca0de2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301266,
+          "stop" : 1686539301268,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "((1,),)", "'select * from t where id == ?;'", "['select * from t where id == 1']" ]
+      }, {
+        "name" : "test_connect_empty_parameters",
+        "uid" : "f29a64adfde4b2f9",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295684,
+          "stop" : 1686539295684,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_not_yet_available",
+        "uid" : "ed319516eb32b1db",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312417,
+          "stop" : 1686539312420,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_set_parameters_sent",
+        "uid" : "54695ad906140042",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299953,
+          "stop" : 1686539299967,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_async_to_sync_after_run",
+        "uid" : "f66f40a05a68b86c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306892,
+          "stop" : 1686539306894,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_with_user_agent",
+        "uid" : "87824562e60d1aed",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539297543,
+          "stop" : 1686539297618,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_database_create",
+        "uid" : "d28fc70f1e2a6f5b",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312617,
+          "stop" : 1686539312774,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[select * from t where id == ?-params3-result3]",
+        "uid" : "4b82cb5d5315bb01",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301257,
+          "stop" : 1686539301259,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "((1,),)", "'select * from t where id == ?'", "['select * from t where id == 1']" ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_error",
+        "uid" : "df59c5d5be478661",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312588,
+          "stop" : 1686539312591,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[select * from t-params1-result1]",
+        "uid" : "f893f56c08c35bd0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301241,
+          "stop" : 1686539301242,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from t'", "['select * from t']" ]
+      }, {
+        "name" : "test_detect_connectors[stack4-map4-expected4]",
+        "uid" : "8b8bbe289944bca7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316623,
+          "stop" : 1686539316624,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'AirbyteSource': ''}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='establish_async_connection', filename='source_firebolt/source.py')]" ]
+      }, {
+        "name" : "test_refresh_with_hooks",
+        "uid" : "1d9be5fb44190dff",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302212,
+          "stop" : 1686539302373,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_completed",
+        "uid" : "5c5166d0545d1a5f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312249,
+          "stop" : 1686539312251,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_no_deprecation_warning_with_env",
+        "uid" : "1a8990aec483bdb7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306008,
+          "stop" : 1686539306073,
+          "duration" : 65
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_closed_cursor",
+        "uid" : "5850a532bae398e0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539298052,
+          "stop" : 1686539298053,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_execute",
+        "uid" : "37dc8ef81c19c0d6",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539311905,
+          "stop" : 1686539311911,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_engine_create_no_available_types",
+        "uid" : "3b1eb2628d8e8f0e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313789,
+          "stop" : 1686539313928,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set[statement7-None]",
+        "uid" : "e35cb64eefba743e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301382,
+          "stop" : 1686539301383,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "<Statement 'UPDATE...' at 0x7F84D07C6450>" ]
+      }, {
+        "name" : "test_token_storage_json_broken",
+        "uid" : "ef1e3b34f8948e6",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306670,
+          "stop" : 1686539306714,
+          "duration" : 44
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_fetchall",
+        "uid" : "cb679d4fb56bc12f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299362,
+          "stop" : 1686539299370,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_statement[statement3-params3-insert into table values (1, '1', '?')]",
+        "uid" : "6372da369cde7638",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301203,
+          "stop" : 1686539301204,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "(1, '1')", "'insert into table values (1, '1', '?')'", "<Statement 'insert...' at 0x7F84D061C6D0>" ]
+      }, {
+        "name" : "test_token_storage_wrong_parameter",
+        "uid" : "5f854e9bcf691081",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306481,
+          "stop" : 1686539306609,
+          "duration" : 128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_default_engine",
+        "uid" : "b09ac005258d7307",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539308002,
+          "stop" : 1686539308223,
+          "duration" : 221
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_fetchone",
+        "uid" : "13d1ebcab8187c3c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299005,
+          "stop" : 1686539299013,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set[statement0-None]",
+        "uid" : "aa036c32425484b7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301332,
+          "stop" : 1686539301332,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "None", "<Statement 'select...' at 0x7F84D07BE850>" ]
+      }, {
+        "name" : "test_auth_uses_same_token_if_valid",
+        "uid" : "337d5cf8a36faee5",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539303924,
+          "stop" : 1686539304072,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_instance_type",
+        "uid" : "a7a98b71b59f07a7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539315215,
+          "stop" : 1686539315364,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rm_invalid_account_name",
+        "uid" : "b016c45cde219543",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316489,
+          "stop" : 1686539316566,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_int",
+        "uid" : "7e861b22ee5a7b50",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301426,
+          "stop" : 1686539301426,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_rm_credentials",
+        "uid" : "189164833b67cc32",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539315544,
+          "stop" : 1686539315948,
+          "duration" : 404
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_settings_auth_credentials[kwargs0]",
+        "uid" : "b84b76bf4572c480",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305988,
+          "stop" : 1686539305988,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'server': 'server', 'default_region': 'default_region'}" ]
+      }, {
+        "name" : "test_closed_connection",
+        "uid" : "4c998544cc27948f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307058,
+          "stop" : 1686539307058,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set_errors[statement2-InterfaceError]",
+        "uid" : "6bf417f6bf546f5f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301404,
+          "stop" : 1686539301405,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "<class 'firebolt.utils.exception.InterfaceError'>", "<Statement 'set a =' at 0x7F84D07C6DD0>" ]
+      }, {
+        "name" : "test_parse_type",
+        "uid" : "9eaef3022f47229d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301418,
+          "stop" : 1686539301419,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_error_handling[UsernamePassword]",
+        "uid" : "b7f97cac3967bf0a",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539304839,
+          "stop" : 1686539305302,
+          "duration" : 463
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "<class 'firebolt.client.auth.username_password.UsernamePassword'>" ]
+      }, {
+        "name" : "test_connect_account_name",
+        "uid" : "1d00d6c85c7168e1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539297360,
+          "stop" : 1686539297523,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursors_closed_on_close",
+        "uid" : "f8815cd5a2fa253f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539307217,
+          "stop" : 1686539307218,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[value14-[]]",
+        "uid" : "94165871d7f870ad",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301139,
+          "stop" : 1686539301139,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'[]'", "[]" ]
+      }, {
+        "name" : "test_rm_token_cache",
+        "uid" : "10075c8143794336",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539315964,
+          "stop" : 1686539316345,
+          "duration" : 381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_execute_error",
+        "uid" : "8cd88fbe6341a380",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310432,
+          "stop" : 1686539310449,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack1-map1-expected1]",
+        "uid" : "71bbc9b99214b8b3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316597,
+          "stop" : 1686539316598,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'FireboltCLI': '0.1.1'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='create_connection', filename='my_documents/some_other_dir/firebolt_cli/utils.py')]" ]
+      }, {
+        "name" : "test_closed_cursor",
+        "uid" : "40552fc06065e6b1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539309916,
+          "stop" : 1686539309917,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value_errors",
+        "uid" : "c3f249560738c995",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301174,
+          "stop" : 1686539301174,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[select * from t;-params2-result2]",
+        "uid" : "8e37de90d0ee66be",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301249,
+          "stop" : 1686539301250,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from t;'", "['select * from t']" ]
+      }, {
+        "name" : "test_split_format_sql[select * from t;insert into t values (1, 2)-params5-result5]",
+        "uid" : "b4525aede4fe6c64",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301276,
+          "stop" : 1686539301278,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from t;insert into t values (1, 2)'", "['select * from t', 'insert into t values (1, 2)']" ]
+      }, {
+        "name" : "test_encrypter_wrong_parameter",
+        "uid" : "7ab6d371334263c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306158,
+          "stop" : 1686539306308,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_expired_token",
+        "uid" : "4dc6e9ce8dce2208",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306806,
+          "stop" : 1686539306851,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_value_datetime[2021-12-31-expected6-date provided]",
+        "uid" : "f245ae7d672b8375",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301528,
+          "stop" : 1686539301528,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'date provided'", "datetime.datetime(2021, 12, 31, 0, 0)", "'2021-12-31'" ]
+      }, {
+        "name" : "test_detect_connectors[stack10-map10-expected10]",
+        "uid" : "fe3fab470f5792c1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316674,
+          "stop" : 1686539316675,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'Superset': ''}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='dummy', filename='root/superset/models/core.py')]" ]
+      }, {
+        "name" : "test_database_get_many",
+        "uid" : "2bc5814af22b8c21",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539312958,
+          "stop" : 1686539313096,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_not_yet_available",
+        "uid" : "67cd4821bafb0fc2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539300840,
+          "stop" : 1686539300843,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_client_different_auths",
+        "uid" : "d25b859fcba1e961",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539302541,
+          "stop" : 1686539302822,
+          "duration" : 281
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_engine_create_with_kwargs",
+        "uid" : "bbcca602855ee3c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313450,
+          "stop" : 1686539313599,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connection_no_warnings",
+        "uid" : "d1d04eeb949c5c86",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539308371,
+          "stop" : 1686539308501,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_skip_parse",
+        "uid" : "25aca0a58d2defce",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539300140,
+          "stop" : 1686539300145,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[abcd-'abcd']",
+        "uid" : "c8ed2f90ec993717",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301047,
+          "stop" : 1686539301047,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''abcd''", "'abcd'" ]
+      }, {
+        "name" : "test_connection_commit",
+        "uid" : "5a94fa078f7232d1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539308655,
+          "stop" : 1686539308656,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_account_name",
+        "uid" : "fa75d6c2f89686db",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539309416,
+          "stop" : 1686539309578,
+          "duration" : 162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_cancel",
+        "uid" : "1e2b75d7a03bea81",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539300493,
+          "stop" : 1686539300496,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_parse_decimal",
+        "uid" : "b0ee955f527110b1",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301541,
+          "stop" : 1686539301541,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_get_status_completed",
+        "uid" : "950c7d7ccf725b4c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539300667,
+          "stop" : 1686539300670,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_get_connection",
+        "uid" : "31825a166bbfabb3",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539314376,
+          "stop" : 1686539314629,
+          "duration" : 253
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_engine_no_attached_database",
+        "uid" : "daa9017570cac0f2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313951,
+          "stop" : 1686539314105,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_settings_happy_path[fields0]",
+        "uid" : "8706cf92d385abb2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539305967,
+          "stop" : 1686539305967,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "('user', 'password', 'account_name', 'server', 'default_region')" ]
+      }, {
+        "name" : "test_format_value[True-true]",
+        "uid" : "46d03f0be7427e7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301103,
+          "stop" : 1686539301104,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'true'", "True" ]
+      }, {
+        "name" : "test_cursor_fetchmany",
+        "uid" : "6acbc6ebf23b71d6",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539299183,
+          "stop" : 1686539299191,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_state",
+        "uid" : "5839aa5cc04d5240",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539297877,
+          "stop" : 1686539297883,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connection_commit",
+        "uid" : "13bd9b65f6f7de0c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539296587,
+          "stop" : 1686539296588,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set[statement1-result1]",
+        "uid" : "e9f4098afd40f9fb",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301339,
+          "stop" : 1686539301340,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='a', value='b')", "<Statement 'set a ...' at 0x7F84D07BE8D0>" ]
+      }, {
+        "name" : "test_parse_value_bool",
+        "uid" : "5e80d074e697708c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301559,
+          "stop" : 1686539301559,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_multiple_tokens",
+        "uid" : "f4012bf126656e84",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306722,
+          "stop" : 1686539306799,
+          "duration" : 77
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_statement[statement1-params1-select * from table where id == 1]",
+        "uid" : "9d5c57a1eb28526e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301188,
+          "stop" : 1686539301189,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "(1,)", "'select * from table where id == 1'", "<Statement 'select...' at 0x7F84D07A7D50>" ]
+      }, {
+        "name" : "test_format_value[test\\\\-'test\\\\\\\\']",
+        "uid" : "542fb84cb5ab1f61",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301061,
+          "stop" : 1686539301061,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''test\\\\''", "'test\\'" ]
+      }, {
+        "name" : "test_statement_to_set[statement4-result4]",
+        "uid" : "7e3dc8dfa9e4b2f8",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301361,
+          "stop" : 1686539301361,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='a', value='b')", "<Statement 'set /*...' at 0x7F84D07BE7D0>" ]
+      }, {
+        "name" : "test_statement_to_set[statement6-result6]",
+        "uid" : "8661cdf6f6621bcc",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301375,
+          "stop" : 1686539301376,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='query_parameters', value='{\"name\":\"param1\",\"value\":\"Hello, world!\"}')", "<Statement 'set qu...' at 0x7F84D07C60D0>" ]
+      }, {
+        "name" : "test_parse_value_date[9999-12-31-expected2-range high provided]",
+        "uid" : "9aa4608ef83781e4",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301460,
+          "stop" : 1686539301460,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'range high provided'", "datetime.date(9999, 12, 31)", "'9999-12-31'" ]
+      }, {
+        "name" : "test_connect_default_engine",
+        "uid" : "7d62a2dc1b7d6f29",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539296195,
+          "stop" : 1686539296419,
+          "duration" : 224
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_statement[statement2-params2-select * from table where id == '?']",
+        "uid" : "d9b65a9d03f9d4b9",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301196,
+          "stop" : 1686539301196,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'select * from table where id == '?''", "<Statement 'select...' at 0x7F84D0828CD0>" ]
+      }, {
+        "name" : "test_connect_with_auth",
+        "uid" : "c28694efd3dee03f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539297094,
+          "stop" : 1686539297285,
+          "duration" : 191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_service_account",
+        "uid" : "aa36949884918d31",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539304551,
+          "stop" : 1686539304680,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_incorrect_user_agent[Connector1.1-clients2]",
+        "uid" : "ae06de366895c7ec",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316838,
+          "stop" : 1686539316850,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'Connector1.1'" ]
+      }, {
+        "name" : "test_detect_connectors[stack8-map8-expected8]",
+        "uid" : "65156952a50e708e",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316656,
+          "stop" : 1686539316657,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'DBT': '0.1.4'}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='open', filename='dbt/adapters/firebolt/connections.py')]" ]
+      }, {
+        "name" : "test_format_value[some\\x00value-'some\\\\0value']",
+        "uid" : "67763c71adf10bb8",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301068,
+          "stop" : 1686539301068,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''some\\0value''", "'some\u0000value'" ]
+      }, {
+        "name" : "test_parse_value_datetime_errors",
+        "uid" : "75c92cf43829891c",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301535,
+          "stop" : 1686539301535,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_execute",
+        "uid" : "91ed36df191e511a",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539310251,
+          "stop" : 1686539310265,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connect_no_user_agent",
+        "uid" : "9a3b9221ad0acc88",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539297635,
+          "stop" : 1686539297710,
+          "duration" : 75
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_execute_error",
+        "uid" : "b8108f644c6bd3e0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539298587,
+          "stop" : 1686539298632,
+          "duration" : 45
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_user_agent[drivers2-clients2-PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0]",
+        "uid" : "f426eca8c9924bb",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316739,
+          "stop" : 1686539316752,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "(('ConnectorA', '0.1.1'), ('ConnectorB', '0.2.0'))", "'PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0'" ]
+      }, {
+        "name" : "test_user_agent[drivers4-clients4-ClientA/1.0.1 PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0]",
+        "uid" : "35434ed415264659",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316779,
+          "stop" : 1686539316791,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[('ClientA', '1.0.1')]", "[('ConnectorA', '0.1.1'), ('ConnectorB', '0.2.0')]", "'ClientA/1.0.1 PythonSDK/2 (Python 1; Win; ciso) ConnectorA/0.1.1 ConnectorB/0.2.0'" ]
+      }, {
+        "name" : "test_engine_create",
+        "uid" : "5ef7efd06debdae4",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539313277,
+          "stop" : 1686539313426,
+          "duration" : 149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_closed_connection",
+        "uid" : "b2d9b95147c9d779",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539295192,
+          "stop" : 1686539295197,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_attach_to_database",
+        "uid" : "791fbce21aeeeb47",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539314659,
+          "stop" : 1686539314845,
+          "duration" : 186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_split_format_sql[set \\t\\na     =   \\t\\n b   ; set c=d;-params9-result9]",
+        "uid" : "944f45fdaab798b2",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301314,
+          "stop" : 1686539301316,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "()", "'set \t\na     =   \t\n b   ; set c=d;'", "[SetParameter(name='a', value='b'), SetParameter(name='c', value='d')]" ]
+      }, {
+        "name" : "test_detect_connectors[stack6-map6-expected6]",
+        "uid" : "c87846cdc3b7ddf9",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316640,
+          "stop" : 1686539316640,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'AirbyteDestination': ''}", "[('Airflow', 'get_conn', PosixPath('firebolt_provider/hooks/firebolt.py'), 'firebolt_provider'), ('AirbyteDestination', 'establish_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteDestination', 'establish_async_connection', PosixPath('destination_firebolt/destination.py'), ''), ('AirbyteSource', 'establish_connection', PosixPath('source_firebolt/source.py'), ''), ('AirbyteSource', 'establish_async_connection', PosixPath('source_firebolt/source.py'), ''), ('FireboltCLI', 'create_connection', PosixPath('firebolt_cli/utils.py'), 'firebolt_cli'), ('DBT', 'open', PosixPath('dbt/adapters/firebolt/connections.py'), 'dbt.adapters.firebolt'), ('Superset', '', PosixPath('superset/models/core.py'), ''), ('Redash', 'run_query', PosixPath('redash/query_runner/firebolt.py'), 'redash'), ('Prefect', 'run', PosixPath('prefect/tasks/firebolt/firebolt.py'), 'prefect')]", "[StackItem(function='establish_async_connection', filename='destination_firebolt/destination.py')]" ]
+      }, {
+        "name" : "test_parse_arrays",
+        "uid" : "e4b1b9d83a970009",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301547,
+          "stop" : 1686539301547,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_format_value[None-NULL]",
+        "uid" : "ce4a14a88d92075d",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301160,
+          "stop" : 1686539301160,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'NULL'", "None" ]
+      }, {
+        "name" : "test_statement_to_set[statement3-result3]",
+        "uid" : "2f52793317ff4bb0",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301354,
+          "stop" : 1686539301354,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='a', value='b')", "<Statement 'set ...' at 0x7F84D07BECD0>" ]
+      }, {
+        "name" : "test_incorrect_user_agent[drivers3-clients3]",
+        "uid" : "b002dface7e60f5f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316858,
+          "stop" : 1686539316870,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[1]", "[]" ]
+      }, {
+        "name" : "test_settings_auth_credentials[kwargs2]",
+        "uid" : "d0389d5018f30749",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539306002,
+          "stop" : 1686539306002,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'auth': <firebolt.client.auth.base.Auth object at 0x7f84d060ef50>, 'access_token': '123', 'server': 'server', 'default_region': 'default_region'}" ]
+      }, {
+        "name" : "test_statement_to_set[statement2-result2]",
+        "uid" : "e39faa8ac7fb0e17",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301347,
+          "stop" : 1686539301347,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "SetParameter(name='a', value='b')", "<Statement 'set a=b' at 0x7F84D07BEAD0>" ]
+      }, {
+        "name" : "test_engine_start_binding_to_missing_database",
+        "uid" : "d435eb62125fec92",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539314132,
+          "stop" : 1686539314349,
+          "duration" : 217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_statement_to_set_errors[statement1-InterfaceError]",
+        "uid" : "429414480c20961f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301397,
+          "stop" : 1686539301397,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "<class 'firebolt.utils.exception.InterfaceError'>", "<Statement 'set a' at 0x7F84D07C6CD0>" ]
+      }, {
+        "name" : "test_parse_value_bytes",
+        "uid" : "f3dc11e4f0a23b3f",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539301565,
+          "stop" : 1686539301565,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_execute",
+        "uid" : "9443a6d2ff2a8f97",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539300316,
+          "stop" : 1686539300323,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_detect_connectors[stack9-map9-expected9]",
+        "uid" : "14531e819e7142a7",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316665,
+          "stop" : 1686539316666,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{}", "[('SQLAlchemy', 'connect', PosixPath('sqlalchemy/engine/default.py'), 'firebolt_db')]", "[StackItem(function='open', filename='dbt/adapters/firebolt/connections.py')]" ]
+      }, {
+        "name" : "test_incorrect_user_agent[drivers4-clients4]",
+        "uid" : "9f7c5a7d24f316de",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539316877,
+          "stop" : 1686539316889,
+          "duration" : 12
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "(('Con1', 'v1.1'), 'Con2')", "[]" ]
+      }, {
+        "name" : "test_engine_update",
+        "uid" : "3f6afc7a40bb5898",
+        "parentUid" : "66b5866ed12b3efe3f24a232361f5dc7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1686539314876,
+          "stop" : 1686539315018,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66b5866ed12b3efe3f24a232361f5dc7"
+    } ],
+    "uid" : "fa4666e3ae6fd782074447c97f301c6c"
+  } ],
+  "name" : "timeline"
+}
