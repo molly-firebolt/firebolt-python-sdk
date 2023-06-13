@@ -494,6 +494,26 @@ def mock_connection_flow(
 
 
 @fixture
+def mock_system_engine_connection_flow(
+    httpx_mock: HTTPXMock,
+    auth_url: str,
+    check_credentials_callback: Callable,
+    get_system_engine_url: str,
+    get_system_engine_callback: Callable,
+    system_engine_query_url: str,
+    get_engine_url_callback: Callable,
+    account_id_url: str,
+    account_id_callback: Callable,
+) -> Callable:
+    def inner() -> None:
+        httpx_mock.add_callback(check_credentials_callback, url=auth_url)
+        httpx_mock.add_callback(get_system_engine_callback, url=get_system_engine_url)
+        httpx_mock.add_callback(account_id_callback, url=account_id_url)
+
+    return inner
+
+
+@fixture
 def mock_query(
     httpx_mock: HTTPXMock,
     query_url: str,
