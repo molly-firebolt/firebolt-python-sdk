@@ -1,0 +1,646 @@
+{
+  "uid" : "8cd7e1449857e0e0",
+  "name" : "test_cursor_server_side_async_cancel",
+  "fullName" : "tests.unit.db.test_cursor#test_cursor_server_side_async_cancel",
+  "historyId" : "aaa64d7e37e5cbac8db1ecc6a76f40ef",
+  "time" : {
+    "start" : 1687125615430,
+    "stop" : 1687125615432,
+    "duration" : 2
+  },
+  "description" : "\n    Cursor is able to cancel query server-side asynchronously and\n    query_id is returned.\n    ",
+  "descriptionHtml" : "<pre><code>Cursor is able to cancel query server-side asynchronously and\nquery_id is returned.\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: invalid query params for async cancel",
+  "statusTrace" : "httpx_mock = <pytest_httpx._httpx_mock.HTTPXMock object at 0x7fdc3aca9450>\nserver_side_async_cancel_callback = <function server_side_async_cancel_callback.<locals>.do_query at 0x7fdc3ae2aa70>\nserver_side_async_id = '1a3f53d', query_with_params_url = None\ncursor = <firebolt.db.cursor.Cursor object at 0x7fdc3afb4470>\n\n    def test_cursor_server_side_async_cancel(\n        httpx_mock: HTTPXMock,\n        server_side_async_cancel_callback: Callable,\n        server_side_async_id: Callable,\n        query_with_params_url: str,\n        cursor: Cursor,\n    ):\n        \"\"\"\n        Cursor is able to cancel query server-side asynchronously and\n        query_id is returned.\n        \"\"\"\n    \n        # Query with json output\n        httpx_mock.add_callback(\n            server_side_async_cancel_callback, url=query_with_params_url\n        )\n        cursor._set_parameters = {\"invalid_parameter\": \"should_not_be_present\"}\n>       cursor.cancel(server_side_async_id)\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/db/test_cursor.py:615: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/common/base_cursor.py:75: in inner\n    return func(self, *args, **kwargs)\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/db/cursor.py:344: in cancel\n    use_set_parameters=False,\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/db/cursor.py:131: in _api_request\n    content=query,\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:814: in request\n    return self.send(request, auth=auth, follow_redirects=follow_redirects)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:905: in send\n    history=[],\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:932: in _send_handling_auth\n    history=history,\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/client/client.py:119: in _send_handling_redirects\n    self._merge_auth_request(request), *args, **kwargs\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:966: in _send_handling_redirects\n    response = self._send_single_request(request)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:1002: in _send_single_request\n    response = transport.handle_request(request)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/_httpx_mock.py:326: in handle_request\n    return self.mock._handle_request(*args, **kwargs)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/_httpx_mock.py:187: in _handle_request\n    response = callback(request)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nrequest = <Request('POST', 'https://api-dev.mock.firebolt.io/cancel?query_id=1a3f53d&database=database')>\nkwargs = {}\n\n    def do_query(request: Request, **kwargs) -> Response:\n        # Make sure no set parameters are added\n        assert list(request.url.params.keys()) == [\n            \"database\",\n            \"query_id\",\n>       ], \"invalid query params for async cancel\"\nE       AssertionError: invalid query params for async cancel\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/db_conftest.py:146: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "query_url",
+    "time" : {
+      "start" : 1687125615066,
+      "stop" : 1687125615066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1687125615000,
+      "stop" : 1687125615003,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "client_id",
+    "time" : {
+      "start" : 1687125615006,
+      "stop" : 1687125615006,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "set_params",
+    "time" : {
+      "start" : 1687125615066,
+      "stop" : 1687125615066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_engine_url_callback",
+    "time" : {
+      "start" : 1687125615070,
+      "stop" : 1687125615070,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "non_mocked_hosts",
+    "time" : {
+      "start" : 1687125615004,
+      "stop" : 1687125615004,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "monkeypatch",
+    "time" : {
+      "start" : 1687125615003,
+      "stop" : 1687125615004,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "cursor",
+    "time" : {
+      "start" : 1687125615428,
+      "stop" : 1687125615428,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "auth_url",
+    "time" : {
+      "start" : 1687125615068,
+      "stop" : 1687125615068,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "account_id_url",
+    "time" : {
+      "start" : 1687125615070,
+      "stop" : 1687125615070,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "access_token",
+    "time" : {
+      "start" : 1687125615068,
+      "stop" : 1687125615068,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "region_1",
+    "time" : {
+      "start" : 1687125615006,
+      "stop" : 1687125615006,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_system_engine_url",
+    "time" : {
+      "start" : 1687125615069,
+      "stop" : 1687125615069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "system_engine_url",
+    "time" : {
+      "start" : 1687125615069,
+      "stop" : 1687125615069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "server",
+    "time" : {
+      "start" : 1687125615005,
+      "stop" : 1687125615005,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "server_side_async_id",
+    "time" : {
+      "start" : 1687125615005,
+      "stop" : 1687125615005,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "server_side_async_cancel_callback",
+    "time" : {
+      "start" : 1687125615005,
+      "stop" : 1687125615005,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "db_name",
+    "time" : {
+      "start" : 1687125615066,
+      "stop" : 1687125615066,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "engine_name",
+    "time" : {
+      "start" : 1687125615067,
+      "stop" : 1687125615067,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "auth",
+    "time" : {
+      "start" : 1687125615007,
+      "stop" : 1687125615064,
+      "duration" : 57
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "connection",
+    "time" : {
+      "start" : 1687125615071,
+      "stop" : 1687125615427,
+      "duration" : 356
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "provider",
+    "time" : {
+      "start" : 1687125615006,
+      "stop" : 1687125615006,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "auth_server",
+    "time" : {
+      "start" : 1687125615067,
+      "stop" : 1687125615067,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "settings",
+    "time" : {
+      "start" : 1687125615065,
+      "stop" : 1687125615065,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "get_system_engine_callback",
+    "time" : {
+      "start" : 1687125615069,
+      "stop" : 1687125615069,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "query_with_params_url",
+    "time" : {
+      "start" : 1687125615067,
+      "stop" : 1687125615067,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "account_id",
+    "time" : {
+      "start" : 1687125615069,
+      "stop" : 1687125615070,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "system_engine_query_url",
+    "time" : {
+      "start" : 1687125615070,
+      "stop" : 1687125615070,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "client_secret",
+    "time" : {
+      "start" : 1687125615007,
+      "stop" : 1687125615007,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "httpx_mock",
+    "time" : {
+      "start" : 1687125615004,
+      "stop" : 1687125615004,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "mock_connection_flow",
+    "time" : {
+      "start" : 1687125615071,
+      "stop" : 1687125615071,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "account_name",
+    "time" : {
+      "start" : 1687125615065,
+      "stop" : 1687125615065,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "assert_all_responses_were_requested",
+    "time" : {
+      "start" : 1687125615004,
+      "stop" : 1687125615004,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "account_id_callback",
+    "time" : {
+      "start" : 1687125615071,
+      "stop" : 1687125615071,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "check_credentials_callback",
+    "time" : {
+      "start" : 1687125615068,
+      "stop" : 1687125615068,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1687125615766,
+      "stop" : 1687125615767,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "monkeypatch::0",
+    "time" : {
+      "start" : 1687125615765,
+      "stop" : 1687125615765,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "connection::0",
+    "time" : {
+      "start" : 1687125615738,
+      "stop" : 1687125615738,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "httpx_mock::0",
+    "time" : {
+      "start" : 1687125615762,
+      "stop" : 1687125615763,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.db"
+  }, {
+    "name" : "suite",
+    "value" : "test_cursor"
+  }, {
+    "name" : "host",
+    "value" : "fv-az507-123"
+  }, {
+    "name" : "thread",
+    "value" : "2395-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.db.test_cursor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8cd7e1449857e0e0.json",
+  "parameterValues" : [ ]
+}

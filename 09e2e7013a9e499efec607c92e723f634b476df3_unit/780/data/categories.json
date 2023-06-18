@@ -1,0 +1,205 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "NameError: name 'settings' is not defined",
+      "children" : [ {
+        "name" : "test_connection_token_caching",
+        "uid" : "f8b67804b32b0737",
+        "parentUid" : "9db41e16bdb1b716cf0dcdee900ee182",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687125588272,
+          "stop" : 1687125588379,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_connection_token_caching",
+        "uid" : "b65dbc4750b7f076",
+        "parentUid" : "9db41e16bdb1b716cf0dcdee900ee182",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687125608034,
+          "stop" : 1687125608138,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9db41e16bdb1b716cf0dcdee900ee182"
+    }, {
+      "name" : "firebolt.utils.exception.ProgrammingError: Query error message",
+      "children" : [ {
+        "name" : "test_cursor_execute_error",
+        "uid" : "3127f98a753eb3f",
+        "parentUid" : "afe65da775fe9e4961e21f88ecd9436b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687125591191,
+          "stop" : 1687125591538,
+          "duration" : 347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_execute_error",
+        "uid" : "868b772114f26f66",
+        "parentUid" : "afe65da775fe9e4961e21f88ecd9436b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1687125611258,
+          "stop" : 1687125611279,
+          "duration" : 21
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "afe65da775fe9e4961e21f88ecd9436b"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: invalid query params for async cancel",
+      "children" : [ {
+        "name" : "test_cursor_server_side_async_cancel",
+        "uid" : "71f4400db83d9d71",
+        "parentUid" : "8d508e81410c6499df9a35ee4b9e4a76",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125595831,
+          "stop" : 1687125596161,
+          "duration" : 330
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_cursor_server_side_async_cancel",
+        "uid" : "8cd7e1449857e0e0",
+        "parentUid" : "8d508e81410c6499df9a35ee4b9e4a76",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125615430,
+          "stop" : 1687125615432,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8d508e81410c6499df9a35ee4b9e4a76"
+    }, {
+      "name" : "AssertionError: The following responses are mocked but not requested:\n  Match all requests on https://id.mock.firebolt.io/oauth/token\nassert not [<pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3afdac10>]",
+      "children" : [ {
+        "name" : "test_cursor_iterate",
+        "uid" : "8d3ea28534b5add4",
+        "parentUid" : "2ebed1dc083efa1d12a4e58e8fff21e9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125597809,
+          "stop" : 1687125598156,
+          "duration" : 347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ebed1dc083efa1d12a4e58e8fff21e9"
+    }, {
+      "name" : "AssertionError: The following responses are mocked but not requested:\n  Match all requests on https://id.mock.firebolt.io/oauth/token\nassert not [<pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3adec810>]",
+      "children" : [ {
+        "name" : "test_cursor_iterate",
+        "uid" : "a20c0473c332d00c",
+        "parentUid" : "2d172002d7446ed1d7e89c761312627b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125617552,
+          "stop" : 1687125617557,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2d172002d7446ed1d7e89c761312627b"
+    }, {
+      "name" : "AssertionError: The following responses are mocked but not requested:\n  Match all requests on https://id.mock.firebolt.io/oauth/token\n  Match GET requests on https://api-dev.mock.firebolt.io/core/v1/account/databases?filter.name_contains=dummy\nassert not [<pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3ad2d510>, <pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3ad2d650>]",
+      "children" : [ {
+        "name" : "test_is_db_available",
+        "uid" : "97c282b3d16aba81",
+        "parentUid" : "ab4d84585f06dbdb350e4458828b96e1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125618038,
+          "stop" : 1687125618045,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab4d84585f06dbdb350e4458828b96e1"
+    }, {
+      "name" : "AssertionError: assert True == False\n +  where True = is_db_available(<firebolt.db.connection.Connection object at 0x7fdc3ad6f550>, 'dummy')",
+      "children" : [ {
+        "name" : "test_is_db_not_available",
+        "uid" : "4099f59cb76c48b",
+        "parentUid" : "d57560cb489c44932b55fdddc3d622fa",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125618527,
+          "stop" : 1687125618535,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d57560cb489c44932b55fdddc3d622fa"
+    }, {
+      "name" : "AssertionError: The following responses are mocked but not requested:\n  Match all requests on https://id.mock.firebolt.io/oauth/token\n  Match GET requests on https://api-dev.mock.firebolt.io/core/v1/account/engines?filter.name_contains=my_engine&filter.current_status_eq=ENGINE_STATUS_RUNNING_REVISION_SERVING\nassert not [<pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3b7c5790>, <pytest_httpx._httpx_mock._RequestMatcher object at 0x7fdc3b1f10d0>]",
+      "children" : [ {
+        "name" : "test_is_engine_running",
+        "uid" : "2a750d8ad5e2e90c",
+        "parentUid" : "6ff95e3bdfd79429f1f720fcaa33da05",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125618995,
+          "stop" : 1687125619003,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6ff95e3bdfd79429f1f720fcaa33da05"
+    }, {
+      "name" : "AssertionError: assert True == False\n +  where True = is_engine_running(<firebolt.db.connection.Connection object at 0x7fdc3ad92d50>, 'https://my-engine.dev.firebolt.io')",
+      "children" : [ {
+        "name" : "test_is_engine_not_running",
+        "uid" : "ade19911ef421636",
+        "parentUid" : "512e42cbfeddc90df122f59cdaa5cdc0",
+        "status" : "failed",
+        "time" : {
+          "start" : 1687125619464,
+          "stop" : 1687125619472,
+          "duration" : 8
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "512e42cbfeddc90df122f59cdaa5cdc0"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
