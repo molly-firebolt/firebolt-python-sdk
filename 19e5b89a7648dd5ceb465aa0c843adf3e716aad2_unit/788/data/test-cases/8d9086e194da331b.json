@@ -1,0 +1,179 @@
+{
+  "uid" : "8d9086e194da331b",
+  "name" : "test_is_engine_running_system",
+  "fullName" : "tests.unit.db.test_util#test_is_engine_running_system",
+  "historyId" : "c632b9ea0ca1f909213af50d4a0bc6a1",
+  "time" : {
+    "start" : 1687439730078,
+    "stop" : 1687439730078,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "_pytest.fixtures.FixtureLookupError: ('mock_system_connection_flow', <SubRequest 'system_connection' for <Function test_is_engine_running_system>>)",
+  "statusTrace" : "file /home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/db/test_util.py, line 47\n  def test_is_engine_running_system(\nfile /home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/db/conftest.py, line 29\n  @fixture\n  def system_connection(\nE       fixture 'mock_system_connection_flow' not found\n>       available fixtures: access_token, access_token_2, account_id, account_id_callback, account_id_url, account_name, anyio_backend, anyio_backend_name, anyio_backend_options, assert_all_responses_were_requested, auth, auth_callback, auth_server, auth_url, autojump_clock, cache, capfd, capfdbinary, caplog, capsys, capsysbinary, check_credentials_callback, check_token_callback, class_mocker, client_id, client_secret, connection, cov, cursor, database_by_name_callback, database_by_name_url, database_id, db_api_exceptions, db_name, doctest_namespace, engine_endpoint, engine_id, engine_name, fs, fs_class, fs_module, fs_session, get_databases_url, get_default_db_engine_callback, get_default_db_engine_not_running_callback, get_engine_name_by_id_url, get_engine_url_callback, get_engine_url_invalid_db_callback, get_engine_url_not_running_callback, get_engines_url, get_system_engine_callback, get_system_engine_url, global_fake_fs, httpx_mock, insert_query_callback, mock_clock, mock_connection_flow, mock_insert_query, mock_query, mock_system_engine_connection_flow, mocker, module_mocker, monkeypatch, no_cover, non_mocked_hosts, nursery, package_mocker, pytestconfig, python_query_data, python_query_description, query_callback, query_data, query_description, query_statistics, query_url, query_with_params_callback, query_with_params_url, record_property, record_testsuite_property, record_xml_attribute, recwarn, select_one_query_callback, server, server_side_async_cancel_callback, server_side_async_cancel_callback_error, server_side_async_get_status_callback, server_side_async_get_status_error, server_side_async_get_status_not_yet_availabe_callback, server_side_async_id, server_side_async_id_callback, server_side_async_missing_id_callback, server_side_async_missing_query_id_error, session_mocker, set_params, set_query_url, system_connection, system_engine_no_db_query_url, system_engine_query_url, system_engine_url, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, worker_id\n>       use 'pytest --fixtures [testpath]' for help on them.\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/db/conftest.py:29",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "client_id",
+    "time" : {
+      "start" : 1687439730082,
+      "stop" : 1687439730082,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "db_name",
+    "time" : {
+      "start" : 1687439730082,
+      "stop" : 1687439730082,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "client_secret",
+    "time" : {
+      "start" : 1687439730082,
+      "stop" : 1687439730082,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "server",
+    "time" : {
+      "start" : 1687439730082,
+      "stop" : 1687439730082,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_name",
+    "time" : {
+      "start" : 1687439730141,
+      "stop" : 1687439730141,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "auth",
+    "time" : {
+      "start" : 1687439730083,
+      "stop" : 1687439730141,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1687439730079,
+      "stop" : 1687439730082,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1687439730150,
+      "stop" : 1687439730150,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.db"
+  }, {
+    "name" : "suite",
+    "value" : "test_util"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1025-84"
+  }, {
+    "name" : "thread",
+    "value" : "2361-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.db.test_util"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8d9086e194da331b.json",
+  "parameterValues" : [ ]
+}

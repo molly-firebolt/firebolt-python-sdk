@@ -1,0 +1,691 @@
+{
+  "uid" : "7aa20f01e7b53f32",
+  "name" : "test_attach_to_database",
+  "fullName" : "tests.unit.service.test_engine#test_attach_to_database",
+  "historyId" : "78035279e57599804ee23eefefeb6d86",
+  "time" : {
+    "start" : 1687439734582,
+    "stop" : 1687439734596,
+    "duration" : 14
+  },
+  "status" : "broken",
+  "statusMessage" : "KeyError: 'WarmupMethod'",
+  "statusTrace" : "httpx_mock = <pytest_httpx._httpx_mock.HTTPXMock object at 0x7fa25d870b50>\nresource_manager = <firebolt.service.manager.ResourceManager object at 0x7fa25e1c7560>\ninstance_type_callback = <function instance_type_callback.<locals>.do_mock at 0x7fa25d8ac9e0>\ninstance_type_url = 'https://api-dev.mock.firebolt.io/aws/v2/accounts/mock_account_id/instanceTypes?page.first=5000'\nmock_database = Database(name='database', description='mock_db_description', region='us-east-1', data_size_full=0, data_size_compressed=0, create_time='2023-06-22T13:15:34.580207', create_actor='')\nmock_engine = Engine(name='engine_1', region='us-east-1', spec=InstanceType(name='B1', is_spot_available=True, cpu_virtual_cores_cou...hod.MINIMAL: 'MINIMAL'>, auto_stop=7200, type=<EngineType.GENERAL_PURPOSE: 'GENERAL_PURPOSE'>, provisioning='Finished')\nget_engine_callback = <function get_objects_from_db_callback.<locals>.do_mock at 0x7fa25d8ac290>\ndatabase_get_callback = <function get_objects_from_db_callback.<locals>.do_mock at 0x7fa25e6a94d0>\nattach_engine_to_db_callback = <function attach_engine_to_db_callback.<locals>.do_mock at 0x7fa25defdef0>\nsystem_engine_no_db_query_url = 'https://bravo.a.eu-west-1.aws.mock.firebolt.io/dynamic/query?output_format=JSON_Compact&account_id=mock_account_id'\n\n    def test_attach_to_database(\n        httpx_mock: HTTPXMock,\n        resource_manager: ResourceManager,\n        instance_type_callback: Callable,\n        instance_type_url: str,\n        mock_database: Database,\n        mock_engine: Engine,\n        get_engine_callback: Callable,\n        database_get_callback: Callable,\n        attach_engine_to_db_callback: Callable,\n        system_engine_no_db_query_url: str,\n    ):\n        httpx_mock.add_callback(instance_type_callback, url=instance_type_url)\n        httpx_mock.add_callback(database_get_callback, url=system_engine_no_db_query_url)\n        httpx_mock.add_callback(get_engine_callback, url=system_engine_no_db_query_url)\n        httpx_mock.add_callback(\n            attach_engine_to_db_callback, url=system_engine_no_db_query_url\n        )\n    \n        database = resource_manager.databases.get(\"database\")\n>       engine = resource_manager.engines.get(\"engine\")\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/service/test_engine.py:120: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/service/engine.py:57: in get\n    return Engine._from_dict(self._get_dict(name), self)\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/service/engine.py:48: in _get_dict\n    count = c.execute(self.GET_BY_NAME_SQL, (name,))\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/common/base_cursor.py:75: in inner\n    return func(self, *args, **kwargs)\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/db/cursor.py:263: in execute\n    self._do_execute(query, params_list, skip_parsing, async_execution)\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/db/cursor.py:209: in _do_execute\n    query, {\"output_format\": JSON_OUTPUT_FORMAT}\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/db/cursor.py:130: in _api_request\n    content=query,\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:814: in request\n    return self.send(request, auth=auth, follow_redirects=follow_redirects)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:905: in send\n    history=[],\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:932: in _send_handling_auth\n    history=history,\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/src/firebolt/client/client.py:119: in _send_handling_redirects\n    self._merge_auth_request(request), *args, **kwargs\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:966: in _send_handling_redirects\n    response = self._send_single_request(request)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/httpx/_client.py:1002: in _send_single_request\n    response = transport.handle_request(request)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/_httpx_mock.py:326: in handle_request\n    return self.mock._handle_request(*args, **kwargs)\n/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/_httpx_mock.py:187: in _handle_request\n    response = callback(request)\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/service/conftest.py:217: in do_mock\n    \"meta\": [{\"name\": fieldname(f), \"type\": types[f.type]} for f in dc_fields],\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\n.0 = <list_iterator object at 0x7fa25d987410>\n\n>       \"meta\": [{\"name\": fieldname(f), \"type\": types[f.type]} for f in dc_fields],\n        \"data\": [[get_obj_field(obj, f) for f in dc_fields] for obj in objs],\n        \"rows\": len(objs),\n        \"statistics\": {\n            \"elapsed\": 0.116907717,\n            \"rows_read\": 1,\n            \"bytes_read\": 61,\n            \"time_before_execution\": 0.012180623,\n            \"time_to_execute\": 0.104614307,\n            \"scanned_bytes_cache\": 0,\n            \"scanned_bytes_storage\": 0,\n        },\n    }\nE   KeyError: 'WarmupMethod'\n\n/home/runner/work/firebolt-python-sdk/firebolt-python-sdk/tests/unit/service/conftest.py:217: KeyError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_system_engine_callback",
+    "time" : {
+      "start" : 1687439734336,
+      "stop" : 1687439734336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mock_instance_types",
+    "time" : {
+      "start" : 1687439734580,
+      "stop" : 1687439734580,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "auth_server",
+    "time" : {
+      "start" : 1687439734335,
+      "stop" : 1687439734335,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "instance_type_3",
+    "time" : {
+      "start" : 1687439734579,
+      "stop" : 1687439734580,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "instance_type_url",
+    "time" : {
+      "start" : 1687439734579,
+      "stop" : 1687439734579,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mock_database",
+    "time" : {
+      "start" : 1687439734580,
+      "stop" : 1687439734580,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mock_system_engine_connection_flow",
+    "time" : {
+      "start" : 1687439734338,
+      "stop" : 1687439734338,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "client_id",
+    "time" : {
+      "start" : 1687439734276,
+      "stop" : 1687439734276,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "db_name",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "system_engine_query_url",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "non_mocked_hosts",
+    "time" : {
+      "start" : 1687439734275,
+      "stop" : 1687439734275,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "database_get_callback",
+    "time" : {
+      "start" : 1687439734581,
+      "stop" : 1687439734581,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "region",
+    "time" : {
+      "start" : 1687439734580,
+      "stop" : 1687439734580,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "access_token",
+    "time" : {
+      "start" : 1687439734336,
+      "stop" : 1687439734336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_id_url",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "auth",
+    "time" : {
+      "start" : 1687439734276,
+      "stop" : 1687439734335,
+      "duration" : 59
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "attach_engine_to_db_callback",
+    "time" : {
+      "start" : 1687439734581,
+      "stop" : 1687439734581,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_name",
+    "time" : {
+      "start" : 1687439734335,
+      "stop" : 1687439734335,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "mock_engine",
+    "time" : {
+      "start" : 1687439734580,
+      "stop" : 1687439734580,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "monkeypatch",
+    "time" : {
+      "start" : 1687439734275,
+      "stop" : 1687439734275,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "assert_all_responses_were_requested",
+    "time" : {
+      "start" : 1687439734275,
+      "stop" : 1687439734275,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_id_callback",
+    "time" : {
+      "start" : 1687439734338,
+      "stop" : 1687439734338,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "client_secret",
+    "time" : {
+      "start" : 1687439734276,
+      "stop" : 1687439734276,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "global_fake_fs",
+    "time" : {
+      "start" : 1687439734272,
+      "stop" : 1687439734275,
+      "duration" : 3
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "instance_type_callback",
+    "time" : {
+      "start" : 1687439734580,
+      "stop" : 1687439734580,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "server",
+    "time" : {
+      "start" : 1687439734335,
+      "stop" : 1687439734335,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_system_engine_url",
+    "time" : {
+      "start" : 1687439734336,
+      "stop" : 1687439734336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_engine_url_callback",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "resource_manager",
+    "time" : {
+      "start" : 1687439734338,
+      "stop" : 1687439734579,
+      "duration" : 241
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "auth_url",
+    "time" : {
+      "start" : 1687439734335,
+      "stop" : 1687439734335,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "httpx_mock",
+    "time" : {
+      "start" : 1687439734275,
+      "stop" : 1687439734275,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "system_engine_no_db_query_url",
+    "time" : {
+      "start" : 1687439734581,
+      "stop" : 1687439734581,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "check_credentials_callback",
+    "time" : {
+      "start" : 1687439734336,
+      "stop" : 1687439734336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_engine_callback",
+    "time" : {
+      "start" : 1687439734581,
+      "stop" : 1687439734581,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "query_statistics",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "account_id",
+    "time" : {
+      "start" : 1687439734337,
+      "stop" : 1687439734337,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "system_engine_url",
+    "time" : {
+      "start" : 1687439734336,
+      "stop" : 1687439734336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "instance_type_2",
+    "time" : {
+      "start" : 1687439734579,
+      "stop" : 1687439734579,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "instance_type_1",
+    "time" : {
+      "start" : 1687439734579,
+      "stop" : 1687439734579,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "monkeypatch::0",
+    "time" : {
+      "start" : 1687439734794,
+      "stop" : 1687439734794,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "global_fake_fs::0",
+    "time" : {
+      "start" : 1687439734795,
+      "stop" : 1687439734796,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "httpx_mock::0",
+    "time" : {
+      "start" : 1687439734793,
+      "stop" : 1687439734793,
+      "duration" : 0
+    },
+    "status" : "failed",
+    "statusMessage" : "AssertionError: The following responses are mocked but not requested:\n  Match all requests on https://api-dev.mock.firebolt.io/aws/v2/accounts/mock_account_id/instanceTypes?page.first=5000\n  Match all requests on https://bravo.a.eu-west-1.aws.mock.firebolt.io/dynamic/query?output_format=JSON_Compact&account_id=mock_account_id\nassert not [<pytest_httpx._httpx_mock._RequestMatcher object at 0x7fa25ddc5f90>, <pytest_httpx._httpx_mock._RequestMatcher object at 0x7fa25ddc5890>]\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/allure_commons/_allure.py\", line 221, in __call__\n    return self._fixture_function(*args, **kwargs)\n  File \"/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/_pytest/fixtures.py\", line 916, in _teardown_yield_fixture\n    next(it)\n  File \"/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/__init__.py\", line 65, in httpx_mock\n    mock.reset(assert_all_responses_were_requested)\n  File \"/opt/hostedtoolcache/Python/3.7.17/x64/lib/python3.7/site-packages/pytest_httpx/_httpx_mock.py\", line 309, in reset\n    assert (\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests.unit.service"
+  }, {
+    "name" : "suite",
+    "value" : "test_engine"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1025-84"
+  }, {
+    "name" : "thread",
+    "value" : "2361-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.unit.service.test_engine"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7aa20f01e7b53f32.json",
+  "parameterValues" : [ ]
+}
